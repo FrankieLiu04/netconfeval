@@ -1,0 +1,39 @@
+[project]
+name = "netconfeval-paper-reproduction"
+version = "0.1.0"
+description = "Independent wrapper and artifacts for selected NetConfEval paper reproduction experiments."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "deepdiff>=8.0.0",
+    "openai>=2.0.0",
+    "python-dotenv>=1.0.1",
+    "sortedcontainers>=2.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+]
+
+[project.scripts]
+netconfeval-step1 = "research.netconfeval_repro.runners.step1_translation:main"
+
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "research",
+    "research.netconfeval_repro",
+    "research.netconfeval_repro.adapters",
+    "research.netconfeval_repro.datasets",
+    "research.netconfeval_repro.runners",
+    "research.netconfeval_repro.scorers",
+    "research.netconfeval_repro.verifiers",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
