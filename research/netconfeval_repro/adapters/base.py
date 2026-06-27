@@ -1,4 +1,5 @@
-"""LLM 适配器的公共协议。"""
+# EN: Shared protocol for LLM adapters.
+# CN: LLM 适配器的公共协议。
 
 from __future__ import annotations
 
@@ -8,7 +9,8 @@ from typing import Any, Protocol
 
 @dataclass(frozen=True)
 class ChatMessage:
-    """单条 chat completion 消息。"""
+    # EN: One chat completion message.
+    # CN: 单条 chat completion 消息。
 
     role: str
     content: str
@@ -16,7 +18,8 @@ class ChatMessage:
 
 @dataclass(frozen=True)
 class ModelResponse:
-    """模型响应及 token 统计。"""
+    # EN: Model response with token counts.
+    # CN: 模型响应及 token 统计。
 
     content: str
     prompt_tokens: int = 0
@@ -24,7 +27,8 @@ class ModelResponse:
 
 
 class LLMAdapter(Protocol):
-    """隐藏具体模型提供商差异的最小接口。"""
+    # EN: Minimal interface that hides provider-specific differences.
+    # CN: 隐藏具体模型提供商差异的最小接口。
 
     def complete_json(
         self,
@@ -33,4 +37,6 @@ class LLMAdapter(Protocol):
         timeout: float,
         max_tokens: int,
     ) -> ModelResponse:
-        """请求模型返回 JSON 文本。"""
+        # EN: Request JSON text from the model.
+        # CN: 请求模型返回 JSON 文本。
+        ...

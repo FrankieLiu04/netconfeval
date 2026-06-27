@@ -10,12 +10,18 @@
 
 ```text
 research/netconfeval_repro/
-├── adapters/     # LLM provider 适配层
-├── datasets/     # 数据读取、采样和样本转换
-├── runners/      # 可执行实验流程
-├── scorers/      # 输出解析和评分
-├── verifiers/    # Step 2/Step 3 验证器边界，后续逐步迁入
-└── paths.py      # 上游仓库路径和 import path 管理
+├── adapters/     # EN: LLM provider adapter layer
+│                 # CN: LLM 提供方适配层
+├── datasets/     # EN: data loading, sampling, and sample transforms
+│                 # CN: 数据读取、采样和样本转换
+├── runners/      # EN: executable experiment flow
+│                 # CN: 可执行实验流程
+├── scorers/      # EN: output parsing and scoring
+│                 # CN: 输出解析和评分
+├── verifiers/    # EN: Step 2/Step 3 verifier boundary
+│                 # CN: Step 2/Step 3 验证器边界
+└── paths.py      # EN: upstream path and import-path management
+                  # CN: 上游路径和 import path 管理
 ```
 
 当前已迁入的是 Step 1 faithful translation runner。旧入口仍保留：

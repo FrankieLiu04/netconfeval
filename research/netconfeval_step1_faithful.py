@@ -1,8 +1,5 @@
-"""NetConfEval Step 1 faithful runner compatibility entrypoint.
-
-该脚本保留旧命令入口；实际实现已迁移到
-`research.netconfeval_repro.runners.step1_translation`。
-"""
+# EN: Compatibility entrypoint for the Step 1 faithful runner.
+# CN: Step 1 faithful runner 的兼容入口。
 
 from __future__ import annotations
 

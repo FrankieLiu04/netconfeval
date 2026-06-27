@@ -1,9 +1,5 @@
-"""Level 3 探针 — 对比 DeepSeek thinking 模式下的 Step 2 代码生成。
-
-该脚本复用上游 NetConfEval 的 Step 2 prompt、测试资产和 verifier，
-但绕开旧 LangChain 调用层，直接使用 OpenAI-compatible streaming API。
-这样可以保存 `reasoning_content`、最终输出、生成代码和 verifier 结果。
-"""
+# EN: Level 3 probe comparing Step 2 code generation with DeepSeek thinking.
+# CN: Level 3 探针，对比 DeepSeek thinking 模式下的 Step 2 代码生成。
 
 from __future__ import annotations
 
@@ -22,7 +18,8 @@ from openai import OpenAI
 
 @dataclass(frozen=True)
 class Variant:
-    """一次 thinking 配置实验。"""
+    # EN: One thinking-configuration experiment.
+    # CN: 一次 thinking 配置实验。
 
     label: str
     description: str
@@ -39,7 +36,8 @@ VARIANTS: tuple[Variant, ...] = (
 
 
 def parse_args() -> argparse.Namespace:
-    """解析命令行参数。"""
+    # EN: Parse command-line arguments.
+    # CN: 解析命令行参数。
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--model", default=os.getenv("NETCONFEVAL_MODEL", "deepseek-v4-flash"))
@@ -50,7 +48,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def build_messages(repo_root: Path) -> list[dict[str, str]]:
-    """构建与上游 Step 2 shortest_path/basic/without_feedback 一致的消息。"""
+    # EN: Build messages matching upstream Step 2 shortest_path/basic/without_feedback.
+    # CN: 构建与上游 Step 2 shortest_path/basic/without_feedback 一致的消息。
     import sys
 
     upstream_pkg = repo_root / "research" / "netconfeval"
@@ -75,7 +74,8 @@ def build_messages(repo_root: Path) -> list[dict[str, str]]:
 
 
 def stream_completion(client: OpenAI, model: str, messages: list[dict[str, str]], variant: Variant) -> tuple[str, str, dict[str, Any]]:
-    """流式调用 DeepSeek，返回 thinking、final content 和 usage。"""
+    # EN: Stream a DeepSeek call and return thinking, final content, and usage.
+    # CN: 流式调用 DeepSeek，返回 thinking、final content 和 usage。
     kwargs: dict[str, Any] = {
         "model": model,
         "messages": messages,
@@ -113,7 +113,8 @@ def stream_completion(client: OpenAI, model: str, messages: list[dict[str, str]]
 
 
 def parse_result(content: str) -> tuple[str | None, str | None]:
-    """从模型 JSON 输出中提取 result 代码。"""
+    # EN: Extract result code from the model JSON output.
+    # CN: 从模型 JSON 输出中提取 result 代码。
     try:
         payload = json.loads(content)
     except json.JSONDecodeError as exc:
@@ -130,7 +131,8 @@ def parse_result(content: str) -> tuple[str | None, str | None]:
 
 
 def verify_code(repo_root: Path, code: str) -> tuple[bool, str, str]:
-    """使用上游 verifier 执行 path_tests。"""
+    # EN: Run upstream verifier against path_tests.
+    # CN: 使用上游 verifier 执行 path_tests。
     import sys
 
     upstream_pkg = repo_root / "research" / "netconfeval"
@@ -148,7 +150,8 @@ def verify_code(repo_root: Path, code: str) -> tuple[bool, str, str]:
 
 
 def classify_failure(success: bool, verifier_output: str) -> str:
-    """把 verifier 输出归类为 Level 3 failure taxonomy。"""
+    # EN: Classify verifier output into the Level 3 failure taxonomy.
+    # CN: 把 verifier 输出归类为 Level 3 failure taxonomy。
     if success:
         return "pass"
     if "takes 1 positional argument but 2 were given" in verifier_output:
@@ -163,13 +166,98 @@ def classify_failure(success: bool, verifier_output: str) -> str:
 
 
 def write_text(path: Path, text: str) -> None:
-    """写入文本文件，确保父目录存在。"""
+    # EN: Write a text file after creating its parent directory.
+    # CN: 写入文本文件，确保父目录存在。
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
 
 
+def variant_row(
+    *,
+    variant: Variant,
+    verifier_success: bool,
+    failure_class: str,
+    parse_error: str | None,
+    elapsed: float,
+    reasoning: str,
+    content: str,
+    usage: dict[str, Any],
+) -> dict[str, Any]:
+    # EN: Build a Level 3 variant summary row.
+    # CN: 构建 Level 3 variant 汇总行。
+    return {
+        "variant": variant.label,
+        "description": variant.description,
+        "thinking_type": variant.thinking_type or "default",
+        "reasoning_effort": variant.reasoning_effort or "default",
+        "success": int(verifier_success),
+        "failure_class": failure_class,
+        "parse_error": parse_error or "",
+        "time": f"{elapsed:.3f}",
+        "reasoning_chars": len(reasoning),
+        "content_chars": len(content),
+        "prompt_tokens": usage.get("prompt_tokens", ""),
+        "completion_tokens": usage.get("completion_tokens", ""),
+        "total_tokens": usage.get("total_tokens", ""),
+    }
+
+
+def run_variant(
+    *,
+    client: OpenAI,
+    model: str,
+    messages: list[dict[str, str]],
+    repo_root: Path,
+    output_dir: Path,
+    variant: Variant,
+) -> dict[str, Any]:
+    # EN: Run one thinking variant and write its artifacts.
+    # CN: 执行单个 thinking variant，并写出该 variant 的 artifact。
+    start = time.time()
+    variant_dir = output_dir / "variants" / variant.label
+    reasoning, content, usage = stream_completion(client, model, messages, variant)
+    elapsed = time.time() - start
+
+    write_text(variant_dir / "reasoning_content.txt", reasoning)
+    write_text(variant_dir / "final_content.json", content)
+    write_text(variant_dir / "usage.json", json.dumps(usage, indent=2))
+
+    code, parse_error = parse_result(content)
+    verifier_success = False
+    failure_class = "format_error"
+    verifier_output = parse_error or ""
+
+    if code is not None:
+        write_text(variant_dir / "generated_code.py", code)
+        verifier_success, failure_class, verifier_output = verify_code(repo_root, code)
+    else:
+        write_text(variant_dir / "generated_code.py", "")
+
+    write_text(variant_dir / "verifier_output.txt", verifier_output)
+    return variant_row(
+        variant=variant,
+        verifier_success=verifier_success,
+        failure_class=failure_class,
+        parse_error=parse_error,
+        elapsed=elapsed,
+        reasoning=reasoning,
+        content=content,
+        usage=usage,
+    )
+
+
+def write_variant_rows(output_dir: Path, rows: list[dict[str, Any]]) -> None:
+    # EN: Write the A-D variant summary CSV.
+    # CN: 写出 A-D variants 的汇总 CSV。
+    with (output_dir / "variant_results.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def main() -> None:
-    """执行 A-D variants 并写出 CSV 与文本 artifact。"""
+    # EN: Run A-D variants and write CSV plus text artifacts.
+    # CN: 执行 A-D variants 并写出 CSV 与文本 artifact。
     args = parse_args()
     if not args.api_key:
         raise SystemExit("Set OPENAI_API_KEY or DEEPSEEK_API_KEY before running the Level 3 thinking probe.")
@@ -184,50 +272,18 @@ def main() -> None:
 
     rows: list[dict[str, Any]] = []
     for variant in VARIANTS:
-        start = time.time()
-        variant_dir = output_dir / "variants" / variant.label
-        reasoning, content, usage = stream_completion(client, args.model, messages, variant)
-        elapsed = time.time() - start
-
-        write_text(variant_dir / "reasoning_content.txt", reasoning)
-        write_text(variant_dir / "final_content.json", content)
-        write_text(variant_dir / "usage.json", json.dumps(usage, indent=2))
-
-        code, parse_error = parse_result(content)
-        verifier_success = False
-        failure_class = "format_error"
-        verifier_output = parse_error or ""
-
-        if code is not None:
-            write_text(variant_dir / "generated_code.py", code)
-            verifier_success, failure_class, verifier_output = verify_code(repo_root, code)
-        else:
-            write_text(variant_dir / "generated_code.py", "")
-
-        write_text(variant_dir / "verifier_output.txt", verifier_output)
-
         rows.append(
-            {
-                "variant": variant.label,
-                "description": variant.description,
-                "thinking_type": variant.thinking_type or "default",
-                "reasoning_effort": variant.reasoning_effort or "default",
-                "success": int(verifier_success),
-                "failure_class": failure_class,
-                "parse_error": parse_error or "",
-                "time": f"{elapsed:.3f}",
-                "reasoning_chars": len(reasoning),
-                "content_chars": len(content),
-                "prompt_tokens": usage.get("prompt_tokens", ""),
-                "completion_tokens": usage.get("completion_tokens", ""),
-                "total_tokens": usage.get("total_tokens", ""),
-            }
+            run_variant(
+                client=client,
+                model=args.model,
+                messages=messages,
+                repo_root=repo_root,
+                output_dir=output_dir,
+                variant=variant,
+            )
         )
 
-    with (output_dir / "variant_results.csv").open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
-        writer.writeheader()
-        writer.writerows(rows)
+    write_variant_rows(output_dir, rows)
 
 
 if __name__ == "__main__":

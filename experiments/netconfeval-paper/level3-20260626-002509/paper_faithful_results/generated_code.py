@@ -2,14 +2,17 @@ from collections import defaultdict, deque
 from typing import Dict, List, Optional
 
 def compute_routing_paths(topology: Dict[str, Dict[int, str]], network_requirements: Optional[None] = None) -> Dict[str, Dict[str, List[str]]]:
-    # Build graph: adjacency list of devices (nodes) connected via LANs
-    # First, group devices by LAN
+    # EN: Build a graph as an adjacency list over LAN-connected devices.
+    # CN: 将图构造成按 LAN 相连的设备邻接表。
+    # EN: Group devices by LAN first.
+    # CN: 先按 LAN 分组设备。
     lan_to_devices = defaultdict(list)
     for device, ports in topology.items():
         for port, lan in ports.items():
             lan_to_devices[lan].append(device)
 
-    # Build adjacency: for each LAN, connect all devices in that LAN (fully connected)
+    # EN: Connect every device within the same LAN.
+    # CN: 将同一 LAN 内的设备全部连接。
     adj = defaultdict(set)
     for lan, devices in lan_to_devices.items():
         for i in range(len(devices)):
@@ -19,13 +22,16 @@ def compute_routing_paths(topology: Dict[str, Dict[int, str]], network_requireme
                 adj[d1].add(d2)
                 adj[d2].add(d1)
 
-    # Identify hosts (names starting with 'h')
+    # EN: Keep hosts only; names start with `h`.
+    # CN: 只保留主机；名称以 `h` 开头。
     hosts = [device for device in topology if device.startswith('h')]
 
-    # For each host, compute shortest paths to all other hosts using BFS
+    # EN: Compute shortest paths to other hosts with BFS.
+    # CN: 用 BFS 计算到其他主机的最短路径。
     paths_dict = {}
     for src in hosts:
-        # BFS from src to all other nodes
+        # EN: BFS from src to all other nodes.
+        # CN: 从 src 对所有节点做 BFS。
         visited = {src}
         queue = deque([(src, [src])])
         paths = {}

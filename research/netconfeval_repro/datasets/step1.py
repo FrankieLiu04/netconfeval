@@ -1,4 +1,5 @@
-"""Step 1 数据集加载和样本转换封装。"""
+# EN: Step 1 dataset loading and sample conversion wrappers.
+# CN: Step 1 数据集加载和样本转换封装。
 
 from __future__ import annotations
 
@@ -21,7 +22,8 @@ from netconfeval.common.utils import (  # noqa: E402
 
 
 def load_step1_dataset(policy_file: Path, policy_types: SortedSet[str]) -> list[dict[str, Any]]:
-    """按原 NetConfEval 逻辑读取 Step 1 policy CSV。"""
+    # EN: Load the Step 1 policy CSV using original NetConfEval logic.
+    # CN: 按原 NetConfEval 逻辑读取 Step 1 policy CSV。
     return load_csv(str(policy_file), policy_types)
 
 
@@ -31,7 +33,8 @@ def pick_step1_sample(
     iteration: int,
     policy_types: SortedSet[str],
 ) -> list[dict[str, Any]]:
-    """按原 NetConfEval 固定 seed 逻辑选择样本。"""
+    # EN: Pick samples using the original NetConfEval fixed-seed logic.
+    # CN: 按原 NetConfEval 固定 seed 逻辑选择样本。
     return pick_sample(max_n_requirements, dataset, iteration, policy_types)
 
 

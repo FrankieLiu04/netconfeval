@@ -1,4 +1,5 @@
-"""NetConfEval Step 1 faithful translation runner。"""
+# EN: NetConfEval Step 1 faithful translation runner.
+# CN: NetConfEval Step 1 faithful translation runner。
 
 from __future__ import annotations
 
@@ -34,7 +35,8 @@ POLICY_CONFIGS: tuple[tuple[tuple[str, ...], tuple[int, ...]], ...] = (
 
 
 def parse_args() -> argparse.Namespace:
-    """解析命令行参数。"""
+    # EN: Parse command-line arguments.
+    # CN: 解析命令行参数。
     parser = argparse.ArgumentParser(
         description="Run NetConfEval Step 1 translation with faithful sampling/scoring."
     )
@@ -66,7 +68,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def prompts_for(policy_types: SortedSet[str]) -> tuple[str, str, str]:
-    """按原 NetConfEval 逻辑选择 Step 1 prompt。"""
+    # EN: Select the Step 1 prompt using original NetConfEval logic.
+    # CN: 按原 NetConfEval 逻辑选择 Step 1 prompt。
     if "loadbalancing" in policy_types:
         from netconfeval.prompts.step_1_reachability_waypoint_load import (
             ASK_FOR_RESULT_PROMPT,
@@ -95,7 +98,8 @@ def call_model(
     timeout: float,
     max_tokens: int,
 ) -> tuple[dict[str, Any] | None, str, int, int, str]:
-    """调用模型，返回 result、错误、token 统计和原始文本。"""
+    # EN: Call the model and return result, error, token counts, and raw text.
+    # CN: 调用模型，返回 result、错误、token 统计和原始文本。
     setup_prompt, function_prompt, ask_prompt = prompts_for(policy_types)
     try:
         response = adapter.complete_json(
@@ -116,7 +120,105 @@ def call_model(
             response.content,
         )
     except Exception as exc:
+        # EN: This boundary covers remote LLM failures and malformed model JSON.
+        # CN: 该边界覆盖远端 LLM 失败和模型 JSON 畸形。
         return None, f"{type(exc).__name__}: {exc}", 0, 0, ""
+
+
+def build_empty_row(
+    *,
+    model_error: str,
+    batch_size: int,
+    n_policy_types: int,
+    policy_types: SortedSet[str],
+    max_n_requirements: int,
+    iteration: int,
+    chunk_index: int,
+    elapsed_seconds: float,
+    prompt_tokens: int,
+    completion_tokens: int,
+    raw_output: str,
+) -> dict[str, Any]:
+    # EN: Build stable fields for a Step 1 CSV row.
+    # CN: 构建 Step 1 CSV row 的稳定字段。
+    return {
+        "model_error": model_error,
+        "format_error": "",
+        "batch_size": batch_size,
+        "n_policy_types": n_policy_types,
+        "policy_types": " ".join(policy_types),
+        "max_n_requirements": max_n_requirements,
+        "iteration": iteration,
+        "chunk": chunk_index,
+        "time": round(elapsed_seconds, 3),
+        "total": 0,
+        "success": 0,
+        "fail": 0,
+        "wrong": 0,
+        "accuracy": 0,
+        "strict_exact_match": 0,
+        "prompt_tokens": prompt_tokens,
+        "completion_tokens": completion_tokens,
+        "total_cost": 0,
+        "diff": "",
+        "raw_output": raw_output,
+    }
+
+
+def print_progress(row: dict[str, Any], n_runs: int, chunk_count: int) -> None:
+    # EN: Print the progress line for one chunk.
+    # CN: 打印单个 chunk 的进度行。
+    status = "OK" if row["accuracy"] else "FAIL"
+    print(
+        f"[{status}] policies={row['policy_types']} "
+        f"iter={row['iteration'] + 1}/{n_runs} batch={row['batch_size']} "
+        f"chunk={row['chunk'] + 1}/{chunk_count} "
+        f"acc={row['accuracy']} exact={row['strict_exact_match']} "
+        f"tokens={row['prompt_tokens']}+{row['completion_tokens']} time={row['time']}s",
+        flush=True,
+    )
+
+
+def run_chunk(
+    *,
+    adapter: LLMAdapter,
+    policy_types: SortedSet[str],
+    sample: list[dict[str, Any]],
+    batch_size: int,
+    max_n_requirements: int,
+    iteration: int,
+    chunk_index: int,
+    timeout: float,
+    max_tokens: int,
+) -> dict[str, Any]:
+    # EN: Run one faithful Step 1 chunk and return a writable CSV row.
+    # CN: 执行一个 faithful Step 1 chunk 并返回可写入 CSV 的 row。
+    expected = transform_sample_to_expected(sample)
+    human_language = convert_to_human_language(sample)
+    started = time.time()
+    result, model_error, prompt_tokens, completion_tokens, raw_output = call_model(
+        adapter=adapter,
+        policy_types=policy_types,
+        human_language=human_language,
+        timeout=timeout,
+        max_tokens=max_tokens,
+    )
+    row = build_empty_row(
+        model_error=model_error,
+        batch_size=batch_size,
+        n_policy_types=len(policy_types),
+        policy_types=policy_types,
+        max_n_requirements=max_n_requirements,
+        iteration=iteration,
+        chunk_index=chunk_index,
+        elapsed_seconds=time.time() - started,
+        prompt_tokens=prompt_tokens,
+        completion_tokens=completion_tokens,
+        raw_output=raw_output,
+    )
+    if result is not None:
+        score_step1_result(expected, result, row)
+    return row
 
 
 def run_policy_config(
@@ -129,7 +231,8 @@ def run_policy_config(
     max_tokens: int,
     max_chunks_per_batch: int | None,
 ) -> list[dict[str, Any]]:
-    """执行一个 policy type 组合，完全保留原脚本 chunk 机制。"""
+    # EN: Run one policy-type combination while preserving upstream chunking.
+    # CN: 执行一个 policy type 组合，完全保留原脚本 chunk 机制。
     policy_types = SortedSet(policy_tuple)
     n_policy_types = len(policy_types)
     max_n_requirements = max(batch_sizes) * n_policy_types
@@ -143,59 +246,26 @@ def run_policy_config(
                 chunk_samples = chunk_samples[:max_chunks_per_batch]
 
             for chunk_index, sample in enumerate(chunk_samples):
-                expected = transform_sample_to_expected(sample)
-                human_language = convert_to_human_language(sample)
-                started = time.time()
-                result, model_error, prompt_tokens, completion_tokens, raw_output = call_model(
+                row = run_chunk(
                     adapter=adapter,
                     policy_types=policy_types,
-                    human_language=human_language,
+                    sample=sample,
+                    batch_size=batch_size,
+                    max_n_requirements=max_n_requirements,
+                    iteration=iteration,
+                    chunk_index=chunk_index,
                     timeout=timeout,
                     max_tokens=max_tokens,
                 )
-
-                row: dict[str, Any] = {
-                    "model_error": model_error,
-                    "format_error": "",
-                    "batch_size": batch_size,
-                    "n_policy_types": n_policy_types,
-                    "policy_types": " ".join(policy_types),
-                    "max_n_requirements": max_n_requirements,
-                    "iteration": iteration,
-                    "chunk": chunk_index,
-                    "time": round(time.time() - started, 3),
-                    "total": 0,
-                    "success": 0,
-                    "fail": 0,
-                    "wrong": 0,
-                    "accuracy": 0,
-                    "strict_exact_match": 0,
-                    "prompt_tokens": prompt_tokens,
-                    "completion_tokens": completion_tokens,
-                    "total_cost": 0,
-                    "diff": "",
-                    "raw_output": raw_output,
-                }
-
-                if result is not None:
-                    score_step1_result(expected, result, row)
-
                 rows.append(row)
-                status = "OK" if row["accuracy"] else "FAIL"
-                print(
-                    f"[{status}] policies={row['policy_types']} "
-                    f"iter={iteration + 1}/{n_runs} batch={batch_size} "
-                    f"chunk={chunk_index + 1}/{len(chunk_samples)} "
-                    f"acc={row['accuracy']} exact={row['strict_exact_match']} "
-                    f"tokens={prompt_tokens}+{completion_tokens} time={row['time']}s",
-                    flush=True,
-                )
+                print_progress(row, n_runs, len(chunk_samples))
 
     return rows
 
 
 def write_rows(path: Path, rows: list[dict[str, Any]]) -> None:
-    """写 CSV 结果。"""
+    # EN: Write CSV results.
+    # CN: 写 CSV 结果。
     path.parent.mkdir(parents=True, exist_ok=True)
     if not rows:
         raise ValueError("No rows to write.")
@@ -206,7 +276,8 @@ def write_rows(path: Path, rows: list[dict[str, Any]]) -> None:
 
 
 def run_step1_translation(args: argparse.Namespace, adapter: LLMAdapter) -> Path:
-    """执行完整 Step 1 translation 复现并返回 CSV 路径。"""
+    # EN: Run the full Step 1 translation reproduction and return the CSV path.
+    # CN: 执行完整 Step 1 translation 复现并返回 CSV 路径。
     all_rows: list[dict[str, Any]] = []
     for policy_tuple, batch_sizes in POLICY_CONFIGS:
         all_policy_types = SortedSet(policy_tuple)
@@ -241,7 +312,8 @@ def run_step1_translation(args: argparse.Namespace, adapter: LLMAdapter) -> Path
 
 
 def main() -> None:
-    """命令行入口。"""
+    # EN: Command-line entrypoint.
+    # CN: 命令行入口。
     args = parse_args()
     adapter = OpenAICompatibleAdapter.from_env(model=args.model)
     run_step1_translation(args, adapter)

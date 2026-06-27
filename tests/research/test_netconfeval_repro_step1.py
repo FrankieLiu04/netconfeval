@@ -14,7 +14,8 @@ from research.netconfeval_repro.scorers import parse_model_json, score_step1_res
 
 
 class StubAdapter:
-    """测试用 LLM 适配器。"""
+    # EN: LLM adapter for tests.
+    # CN: 测试用 LLM 适配器。
 
     def complete_json(
         self,

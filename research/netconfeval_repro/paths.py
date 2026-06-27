@@ -1,4 +1,5 @@
-"""NetConfEval 复现实验的路径和上游导入处理。"""
+# EN: Paths and upstream imports for NetConfEval reproduction experiments.
+# CN: NetConfEval 复现实验的路径和上游导入处理。
 
 from __future__ import annotations
 
@@ -15,7 +16,8 @@ DEFAULT_RESULTS_ROOT = UPSTREAM_ROOT
 
 
 def ensure_upstream_on_path() -> None:
-    """把原 NetConfEval 仓库加入 import path。"""
+    # EN: Add the original NetConfEval repository to the import path.
+    # CN: 把原 NetConfEval 仓库加入 import path。
     upstream = str(UPSTREAM_ROOT)
     if upstream not in sys.path:
         sys.path.insert(0, upstream)

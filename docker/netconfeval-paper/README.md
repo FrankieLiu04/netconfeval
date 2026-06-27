@@ -39,7 +39,8 @@ docker compose -f docker/netconfeval-paper/compose.yaml build
 
 ```bash
 OPENAI_API_KEY=...
-# 或
+# EN: or
+# CN: 或
 DEEPSEEK_API_KEY=...
 ```
 

@@ -28,11 +28,16 @@ Step 3 Kathara/FRR simulation is intentionally out of scope for this snapshot.
 ## Layout
 
 ```text
-docker/netconfeval-paper/      # paper-compatible Docker environment
-research/netconfeval_repro/    # maintainable reproduction runner
-research/legacy/               # early smoke reproduction archive
-experiments/netconfeval-paper/ # selected summaries and result artifacts
-tests/research/                # lightweight runner tests
+docker/netconfeval-paper/      # EN: paper-compatible Docker environment
+                               # CN: 论文兼容的 Docker 环境
+research/netconfeval_repro/    # EN: maintainable reproduction runner
+                               # CN: 可维护的复现运行器
+research/legacy/               # EN: early smoke reproduction archive
+                               # CN: 早期 smoke 复现归档
+experiments/netconfeval-paper/ # EN: selected summaries and result artifacts
+                               # CN: 选取的摘要和结果产物
+tests/research/                # EN: lightweight runner tests
+                               # CN: 轻量级 runner 测试
 ```
 
 ## Local Python Checks

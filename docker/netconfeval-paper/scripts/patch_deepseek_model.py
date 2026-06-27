@@ -1,10 +1,9 @@
-"""Best-effort patch for using DeepSeek through upstream NetConfEval scripts.
-
-The maintained Step 1 runner does not need this patch. The original LangChain
-scripts look up model names through netconfeval/common/model_configs.py, so the
-Docker wrapper appends a tiny compatibility block when the upstream snapshot has
-not already been patched locally.
-"""
+# EN: Best-effort patch for using DeepSeek through upstream NetConfEval scripts.
+# CN: 为上游 NetConfEval 脚本兼容 DeepSeek 的尽力补丁。
+# EN: The maintained Step 1 runner does not need this patch.
+# CN: 维护版 Step 1 runner 不需要该补丁。
+# EN: The Docker wrapper patches upstream model config only when needed.
+# CN: Docker wrapper 只在需要时补丁上游模型配置。
 
 from __future__ import annotations
 

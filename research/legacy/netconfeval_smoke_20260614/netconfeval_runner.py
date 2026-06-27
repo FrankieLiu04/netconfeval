@@ -22,13 +22,15 @@ from typing import Any
 from deepdiff import DeepDiff
 from openai import OpenAI
 
-# ── Config ───────────────────────────────────────────────────────────────────
+# EN: Configuration constants.
+# CN: 配置常量。
 MODEL = os.getenv("NETCONFEVAL_MODEL", "deepseek-v4-flash")
 N_RUNS = int(os.getenv("NETCONFEVAL_N_RUNS", "5"))
 RESULTS_DIR = Path("research/netconfeval/results_spec_translation")
 ASSETS_DIR = Path("research/netconfeval/assets")
 
-# NetConfEval prompts (extracted from their source)
+# EN: NetConfEval prompts extracted from upstream.
+# CN: 从上游提取的 NetConfEval prompts。
 SYSTEM_PROMPT = """Your task is to transform the network requirements into a formal specification.
 You only reply in JSON, no natural language.
 If the response is successful, reply with: {"status": "OK", "result": "<RESULT>"}
@@ -56,8 +58,8 @@ Translate the following requirements into formal specification JSON only."""
 
 ASK_FOR_RESULT = "Give the result in JSON only, no additional text."
 
-# CSV column names in the NetConfEval dataset
-# From assets/step_1_policies.csv: source,prefix,policy_type[,waypoint|num]
+# EN: CSV columns from `assets/step_1_policies.csv`.
+# CN: `assets/step_1_policies.csv` 的列名。
 
 
 def load_csv(csv_path: str, policy_types: set[str]) -> list[dict]:
@@ -166,7 +168,8 @@ def transform_to_expected(sample: list[dict]) -> dict:
             spec["loadbalancing"].setdefault(src, {})[prefix] = int(
                 item.get("num", "2")
             )
-    # Remove empty sections
+    # EN: Drop empty sections from the spec.
+    # CN: 从 spec 中移除空 section。
     return {k: v for k, v in spec.items() if v}
 
 
@@ -188,20 +191,23 @@ def call_llm(client: OpenAI, prompt: str) -> tuple[dict | None, int, int, float]
         prompt_tokens = usage.prompt_tokens if usage else 0
         completion_tokens = usage.completion_tokens if usage else 0
 
-        # Parse JSON from response
+        # EN: Parse the model response as JSON.
+        # CN: 将模型响应解析为 JSON。
         content = content.strip()
         if content.startswith("```"):
             content = content.split("```")[1]
             if content.startswith("json"):
                 content = content[4:]
         result = json.loads(content)
-        # Extract the actual result field
+        # EN: Unwrap the `result` field if present.
+        # CN: 如有 `result` 字段则解包。
         if isinstance(result, dict) and "result" in result:
             result = result["result"]
         if isinstance(result, str):
             result = json.loads(result)
 
-        # DeepSeek cost: ~$0.28/M input, ~$1.10/M output
+        # EN: Approximate DeepSeek pricing: ~$0.28/M input and ~$1.10/M output.
+        # CN: DeepSeek 近似单价：输入约 ~$0.28/M，输出约 ~$1.10/M。
         cost = (prompt_tokens * 0.28 + completion_tokens * 1.10) / 1_000_000
         return result, prompt_tokens, completion_tokens, cost
     except Exception as e:
@@ -277,13 +283,15 @@ def main() -> None:
 
     client = OpenAI(api_key=api_key, base_url=base_url)
 
-    # Locate the dataset
+    # EN: Locate the archived dataset.
+    # CN: 定位归档数据集。
     dataset_path = ASSETS_DIR / "step_1_policies.csv"
     if not dataset_path.exists():
         print(f"ERROR: Dataset not found at {dataset_path}", file=sys.stderr)
         sys.exit(1)
 
-    # Load all policy types at once
+    # EN: Load all policy types in one pass.
+    # CN: 一次性加载所有 policy 类型。
     dataset = load_csv(
         str(dataset_path),
         {"reachability", "waypoint", "loadbalancing"},
@@ -294,7 +302,8 @@ def main() -> None:
 
     all_results: list[dict] = []
 
-    # ── Experiment 1: reachability only, varied batch sizes ──
+    # EN: Experiment 1: reachability only with varied batch sizes.
+    # CN: 实验 1：仅 reachability，批大小变化。
     print("\n=== Step 1: Reachability only ===")
     res1 = run_benchmark(
         client, dataset, ["reachability"],
@@ -303,7 +312,8 @@ def main() -> None:
     )
     all_results.extend(res1)
 
-    # ── Experiment 2: reachability + waypoint ──
+    # EN: Experiment 2: reachability plus waypoint.
+    # CN: 实验 2：reachability 加 waypoint。
     print("\n=== Step 1: Reachability + Waypoint ===")
     res2 = run_benchmark(
         client, dataset, ["reachability", "waypoint"],
@@ -312,7 +322,8 @@ def main() -> None:
     )
     all_results.extend(res2)
 
-    # ── Experiment 3: reachability + waypoint + loadbalancing ──
+    # EN: Experiment 3: reachability, waypoint, and loadbalancing.
+    # CN: 实验 3：reachability、waypoint 和 loadbalancing。
     print("\n=== Step 1: Reachability + Waypoint + LoadBalancing ===")
     res3 = run_benchmark(
         client, dataset, ["reachability", "waypoint", "loadbalancing"],
@@ -321,7 +332,8 @@ def main() -> None:
     )
     all_results.extend(res3)
 
-    # ── Save results ──
+    # EN: Save results.
+    # CN: 保存结果。
     timestamp = time.strftime("%Y%m%d-%H%M%S")
     csv_path = RESULTS_DIR / f"result-deepseek-v4-flash-step1-{timestamp}.csv"
     with open(csv_path, "w", encoding="utf-8", newline="") as f:
@@ -330,7 +342,8 @@ def main() -> None:
             writer.writeheader()
             writer.writerows(all_results)
 
-    # ── Summary ──
+    # EN: Print the summary.
+    # CN: 打印汇总。
     total_acc = sum(r["accuracy"] for r in all_results)
     total_cost = sum(r["cost_usd"] for r in all_results)
     n = len(all_results)

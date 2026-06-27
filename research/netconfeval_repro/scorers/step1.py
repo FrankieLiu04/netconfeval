@@ -1,4 +1,5 @@
-"""Step 1 输出解析与评分。"""
+# EN: Step 1 output parsing and scoring.
+# CN: Step 1 输出解析与评分。
 
 from __future__ import annotations
 
@@ -15,7 +16,8 @@ from netconfeval.common.utils import compare_result  # noqa: E402
 
 
 def parse_model_json(content: str) -> dict[str, Any]:
-    """解析模型返回的 JSON，并抽取 `result` 字段。"""
+    # EN: Parse model-returned JSON and extract the `result` field.
+    # CN: 解析模型返回的 JSON，并抽取 `result` 字段。
     text = content.strip()
     if text.startswith("```"):
         parts = text.split("```")
@@ -37,7 +39,8 @@ def parse_model_json(content: str) -> dict[str, Any]:
 
 
 def normalize_result(result: dict[str, Any]) -> dict[str, Any]:
-    """复用原脚本的 key 空格清理逻辑。"""
+    # EN: Reuse the original script's key-whitespace cleanup logic.
+    # CN: 复用原脚本的 key 空格清理逻辑。
     normalized = dict(result)
     if "waypoint" in result and isinstance(result["waypoint"], dict):
         normalized["waypoint"] = {str(k).replace(" ", ""): v for k, v in result["waypoint"].items()}
@@ -49,7 +52,8 @@ def normalize_result(result: dict[str, Any]) -> dict[str, Any]:
 
 
 def score_step1_result(expected: dict[str, Any], result: dict[str, Any], row: dict[str, Any]) -> None:
-    """填充 Step 1 原论文式 accuracy 和 strict diff 字段。"""
+    # EN: Fill original Step 1 accuracy and strict-diff fields.
+    # CN: 填充 Step 1 原论文式 accuracy 和 strict diff 字段。
     normalized = normalize_result(result)
     compare_result(expected, normalized, row)
     diff = DeepDiff(expected, normalized, ignore_order=True)

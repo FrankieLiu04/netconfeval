@@ -1,4 +1,5 @@
-"""OpenAI-compatible Chat Completions 适配器。"""
+# EN: OpenAI-compatible Chat Completions adapter.
+# CN: OpenAI-compatible Chat Completions 适配器。
 
 from __future__ import annotations
 
@@ -15,7 +16,8 @@ DEFAULT_MODEL = "deepseek-v4-flash"
 
 
 class OpenAICompatibleAdapter:
-    """通过 OpenAI SDK 调用兼容 Chat Completions 的模型服务。"""
+    # EN: Call Chat Completions-compatible model services through the OpenAI SDK.
+    # CN: 通过 OpenAI SDK 调用兼容 Chat Completions 的模型服务。
 
     def __init__(self, *, model: str, api_key: str, base_url: str | None) -> None:
         self.model = model
@@ -23,7 +25,8 @@ class OpenAICompatibleAdapter:
 
     @classmethod
     def from_env(cls, *, model: str | None = None) -> "OpenAICompatibleAdapter":
-        """从 `.env` / 环境变量构建适配器。"""
+        # EN: Build an adapter from `.env` and environment variables.
+        # CN: 从 `.env` / 环境变量构建适配器。
         load_dotenv()
         api_key = os.getenv("OPENAI_API_KEY") or os.getenv("DEEPSEEK_API_KEY")
         base_url = os.getenv("OPENAI_BASE_URL") or os.getenv("DEEPSEEK_BASE_URL") or DEFAULT_BASE_URL
@@ -39,7 +42,8 @@ class OpenAICompatibleAdapter:
         timeout: float,
         max_tokens: int,
     ) -> ModelResponse:
-        """请求 OpenAI-compatible API，并要求 JSON object 响应。"""
+        # EN: Request a JSON object response from the OpenAI-compatible API.
+        # CN: 请求 OpenAI-compatible API，并要求 JSON object 响应。
         response = self._client.chat.completions.create(
             model=self.model,
             messages=[{"role": message.role, "content": message.content} for message in messages],
