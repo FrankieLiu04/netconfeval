@@ -1,0 +1,2737 @@
+model_error,format_error,batch_size,n_policy_types,policy_types,max_n_requirements,iteration,chunk,time,total,success,fail,wrong,accuracy,strict_exact_match,prompt_tokens,completion_tokens,total_cost,diff,raw_output
+,,1,3,loadbalancing reachability waypoint,99,0,0,4.106,3,3,0,0,1.0,1,861,338,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""athens"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(athens,100.0.29.0/24)"": [""london""]
+    },
+    ""loadbalancing"": {
+      ""(athens,100.0.29.0/24)"": 3
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,1,2.58,3,3,0,0,1.0,1,859,261,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""strasbourg"": [""100.0.1.0/24""]
+        },
+        ""waypoint"": {
+            ""(strasbourg,100.0.1.0/24)"": [""kiev""]
+        },
+        ""loadbalancing"": {
+            ""(strasbourg,100.0.1.0/24)"": 2
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,2,3.649,3,3,0,0,1.0,1,858,346,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""luxembourg"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(luxembourg,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(luxembourg,100.0.4.0/24)"": 4
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,3,1.919,3,3,0,0,1.0,1,858,163,0,{},"{
+    ""reachability"": {
+        ""frankfurt"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+        ""(frankfurt,100.0.29.0/24)"": [""london""]
+    },
+    ""loadbalancing"": {
+        ""(frankfurt,100.0.29.0/24)"": 2
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,4,14.292,3,3,0,0,1.0,1,857,291,0,{},"{""status"":""ok"",""result"":{""reachability"":{""zurich"":[""100.0.9.0/24""]},""waypoint"":{""(zurich,100.0.9.0/24)"":[""rotterdam""]},""loadbalancing"":{""(zurich,100.0.9.0/24)"":3}}}"
+,,1,3,loadbalancing reachability waypoint,99,0,5,3.547,3,3,0,0,1.0,1,867,300,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""luxembourg"": [""100.0.1.0/24""]
+        },
+        ""waypoint"": {
+            ""(luxembourg,100.0.1.0/24)"": [""kiev""]
+        },
+        ""loadbalancing"": {
+            ""(luxembourg,100.0.1.0/24)"": 4
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,6,3.185,3,3,0,0,1.0,1,855,261,0,{},"{""status"": ""ok"", ""result"": {""reachability"": {""vienna"": [""100.0.1.0/24""]}, ""waypoint"": {""(vienna,100.0.1.0/24)"": [""kiev""]}, ""loadbalancing"": {""(vienna,100.0.1.0/24)"": 2}}}"
+,,1,3,loadbalancing reachability waypoint,99,0,7,2.873,3,3,0,0,1.0,1,859,187,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""istanbul"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(istanbul,100.0.9.0/24)"": [""rotterdam""]
+    },
+    ""loadbalancing"": {
+      ""(istanbul,100.0.9.0/24)"": 2
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,8,2.932,3,3,0,0,1.0,1,854,204,0,{},"{""status"":""ok"",""result"":{""reachability"":{""kiev"":[""100.0.29.0/24""]},""waypoint"":{""(kiev,100.0.29.0/24)"":[""london""]},""loadbalancing"":{""(kiev,100.0.29.0/24)"":3}}}"
+,,1,3,loadbalancing reachability waypoint,99,0,9,3.699,3,3,0,0,1.0,1,858,309,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""budapest"": [""100.0.29.0/24""]
+        },
+        ""waypoint"": {
+            ""(budapest,100.0.29.0/24)"": [""london""]
+        },
+        ""loadbalancing"": {
+            ""(budapest,100.0.29.0/24)"": 3
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,10,4.782,3,3,0,0,1.0,1,859,190,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""rotterdam"": [""100.0.29.0/24""]
+        },
+        ""waypoint"": {
+            ""(rotterdam,100.0.29.0/24)"": [""london""]
+        },
+        ""loadbalancing"": {
+            ""(rotterdam,100.0.29.0/24)"": 2
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,11,3.795,3,3,0,0,1.0,1,859,358,0,{},"{""status"": ""ok"", ""result"": {""reachability"": {""geneva"": [""100.0.1.0/24""]}, ""waypoint"": {""(geneva,100.0.1.0/24)"": [""kiev""]}, ""loadbalancing"": {""(geneva,100.0.1.0/24)"": 5}}}"
+,,1,3,loadbalancing reachability waypoint,99,0,12,2.941,3,3,0,0,1.0,1,859,261,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""lyon"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(lyon,100.0.9.0/24)"": [""rotterdam""]
+        },
+        ""loadbalancing"": {
+            ""(lyon,100.0.9.0/24)"": 6
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,13,2.882,3,3,0,0,1.0,1,863,255,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""roma"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(roma,100.0.29.0/24)"": [""london""]
+    },
+    ""loadbalancing"": {
+      ""(roma,100.0.29.0/24)"": 2
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,14,2.663,3,3,0,0,1.0,1,863,242,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""brussels"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(brussels,100.0.1.0/24)"": [""kiev""]
+    },
+    ""loadbalancing"": {
+      ""(brussels,100.0.1.0/24)"": 4
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,15,2.961,3,3,0,0,1.0,1,864,245,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(bucharest,100.0.1.0/24)"": [""kiev""]
+    },
+    ""loadbalancing"": {
+      ""(bucharest,100.0.1.0/24)"": 2
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,16,2.874,3,3,0,0,1.0,1,864,267,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.9.0/24)"": [""rotterdam""]
+    },
+    ""loadbalancing"": {
+      ""(marseille,100.0.9.0/24)"": 4
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,17,2.945,3,3,0,0,1.0,1,858,250,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""frankfurt"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(frankfurt,100.0.9.0/24)"": [""rotterdam""]
+        },
+        ""loadbalancing"": {
+            ""(frankfurt,100.0.9.0/24)"": 2
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,18,3.119,3,3,0,0,1.0,1,861,280,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""geneva"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(geneva,100.0.4.0/24)"": [""basel""]
+        },
+        ""loadbalancing"": {
+            ""(geneva,100.0.4.0/24)"": 3
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,19,5.55,3,3,0,0,1.0,1,861,630,0,{},"{""status"":""ok"",""result"":{""reachability"":{""rotterdam"":[""100.0.4.0/24""]},""waypoint"":{""(rotterdam,100.0.4.0/24)"":[""basel""]},""loadbalancing"":{""(rotterdam,100.0.4.0/24)"":3}}}"
+,,1,3,loadbalancing reachability waypoint,99,0,20,4.024,3,3,0,0,1.0,1,859,356,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""barcelona"": [""100.0.1.0/24""]
+        },
+        ""waypoint"": {
+            ""(barcelona,100.0.1.0/24)"": [""kiev""]
+        },
+        ""loadbalancing"": {
+            ""(barcelona,100.0.1.0/24)"": 3
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,21,4.119,3,3,0,0,1.0,1,858,384,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""vienna"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(vienna,100.0.9.0/24)"": [""rotterdam""]
+        },
+        ""loadbalancing"": {
+            ""(vienna,100.0.9.0/24)"": 3
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,22,3.369,3,3,0,0,1.0,1,862,278,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""praha"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(praha,100.0.4.0/24)"": [""basel""]
+        },
+        ""loadbalancing"": {
+            ""(praha,100.0.4.0/24)"": 2
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,23,2.568,3,3,0,0,1.0,1,859,248,0,{},"{
+    ""reachability"": {
+        ""paris"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+        ""(paris,100.0.29.0/24)"": [""london""]
+    },
+    ""loadbalancing"": {
+        ""(paris,100.0.29.0/24)"": 2
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,24,3.339,3,3,0,0,1.0,1,859,360,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""kiev"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(kiev,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(kiev,100.0.4.0/24)"": 2
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,25,3.928,3,3,0,0,1.0,1,861,389,0,{},"{""status"":""ok"",""result"":{""reachability"":{""budapest"":[""100.0.4.0/24""]},""waypoint"":{""(budapest,100.0.4.0/24)"":[""basel""]},""loadbalancing"":{""(budapest,100.0.4.0/24)"":4}}}"
+,,1,3,loadbalancing reachability waypoint,99,0,26,3.171,3,3,0,0,1.0,1,859,269,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""amsterdam"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(amsterdam,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(amsterdam,100.0.4.0/24)"": 7
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,27,4.504,3,3,0,0,1.0,1,854,448,0,{},"{""status"":""ok"",""result"":{""reachability"":{""madrid"":[""100.0.29.0/24""]},""waypoint"":{""(madrid,100.0.29.0/24)"":[""london""]},""loadbalancing"":{""(madrid,100.0.29.0/24)"":2}}}"
+,,1,3,loadbalancing reachability waypoint,99,0,28,3.289,3,3,0,0,1.0,1,858,375,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""barcelona"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(barcelona,100.0.29.0/24)"": [""london""]
+    },
+    ""loadbalancing"": {
+      ""(barcelona,100.0.29.0/24)"": 2
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,29,4.199,3,3,0,0,1.0,1,855,404,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""warsaw"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(warsaw,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(warsaw,100.0.4.0/24)"": 2
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,30,3.921,3,3,0,0,1.0,1,855,421,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""sofia"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(sofia,100.0.9.0/24)"": [""rotterdam""]
+    },
+    ""loadbalancing"": {
+      ""(sofia,100.0.9.0/24)"": 4
+    }
+  }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,31,2.822,3,3,0,0,1.0,1,861,262,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""strasbourg"": [""100.0.29.0/24""]
+        },
+        ""waypoint"": {
+            ""(strasbourg,100.0.29.0/24)"": [""london""]
+        },
+        ""loadbalancing"": {
+            ""(strasbourg,100.0.29.0/24)"": 2
+        }
+    }
+}"
+,,1,3,loadbalancing reachability waypoint,99,0,32,2.461,3,3,0,0,1.0,1,864,187,0,{},"{
+    ""status"": ""OK"",
+    ""result"": {
+        ""reachability"": {
+            ""bratislava"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(bratislava,100.0.4.0/24)"": [""basel""]
+        },
+        ""loadbalancing"": {
+            ""(bratislava,100.0.4.0/24)"": 4
+        }
+    }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,0,10.131,9,9,0,0,1.0,1,980,1223,0,{},"{
+  ""status"": ""OK"",
+  ""result"": {
+    ""reachability"": {
+      ""athens"": [""100.0.29.0/24""],
+      ""strasbourg"": [""100.0.1.0/24""],
+      ""luxembourg"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(athens,100.0.29.0/24)"": [""london""],
+      ""(strasbourg,100.0.1.0/24)"": [""kiev""],
+      ""(luxembourg,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(athens,100.0.29.0/24)"": 3,
+      ""(strasbourg,100.0.1.0/24)"": 2,
+      ""(luxembourg,100.0.4.0/24)"": 4
+    }
+  }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,1,6.244,9,9,0,0,1.0,1,986,843,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""frankfurt"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.9.0/24""],
+      ""luxembourg"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(frankfurt,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""],
+      ""(luxembourg,100.0.1.0/24)"": [""kiev""]
+    },
+    ""loadbalancing"": {
+      ""(frankfurt,100.0.29.0/24)"": 2,
+      ""(zurich,100.0.9.0/24)"": 3,
+      ""(luxembourg,100.0.1.0/24)"": 4
+    }
+  }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,2,4.918,9,9,0,0,1.0,1,993,640,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""vienna"": [""100.0.1.0/24""],
+      ""istanbul"": [""100.0.9.0/24""],
+      ""kiev"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(vienna,100.0.1.0/24)"": [""kiev""],
+      ""(istanbul,100.0.9.0/24)"": [""rotterdam""],
+      ""(kiev,100.0.29.0/24)"": [""london""]
+    },
+    ""loadbalancing"": {
+      ""(vienna,100.0.1.0/24)"": 2,
+      ""(istanbul,100.0.9.0/24)"": 2,
+      ""(kiev,100.0.29.0/24)"": 3
+    }
+  }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,3,5.486,9,9,0,0,1.0,1,978,740,0,{},"{
+    ""reachability"": {
+        ""budapest"": [""100.0.29.0/24""],
+        ""rotterdam"": [""100.0.29.0/24""],
+        ""geneva"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+        ""(budapest,100.0.29.0/24)"": [""london""],
+        ""(rotterdam,100.0.29.0/24)"": [""london""],
+        ""(geneva,100.0.1.0/24)"": [""kiev""]
+    },
+    ""loadbalancing"": {
+        ""(budapest,100.0.29.0/24)"": 3,
+        ""(rotterdam,100.0.29.0/24)"": 2,
+        ""(geneva,100.0.1.0/24)"": 5
+    }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,4,5.418,9,9,0,0,1.0,1,975,838,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""lyon"": [""100.0.9.0/24""],
+      ""roma"": [""100.0.29.0/24""],
+      ""brussels"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(lyon,100.0.9.0/24)"": [""rotterdam""],
+      ""(roma,100.0.29.0/24)"": [""london""],
+      ""(brussels,100.0.1.0/24)"": [""kiev""]
+    },
+    ""loadbalancing"": {
+      ""(lyon,100.0.9.0/24)"": 6,
+      ""(roma,100.0.29.0/24)"": 2,
+      ""(brussels,100.0.1.0/24)"": 4
+    }
+  }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,5,7.106,9,9,0,0,1.0,1,986,1053,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""bucharest"": [""100.0.1.0/24""],
+            ""marseille"": [""100.0.9.0/24""],
+            ""frankfurt"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(bucharest,100.0.1.0/24)"": [""kiev""],
+            ""(marseille,100.0.9.0/24)"": [""rotterdam""],
+            ""(frankfurt,100.0.9.0/24)"": [""rotterdam""]
+        },
+        ""loadbalancing"": {
+            ""(bucharest,100.0.1.0/24)"": 2,
+            ""(marseille,100.0.9.0/24)"": 4,
+            ""(frankfurt,100.0.9.0/24)"": 2
+        }
+    }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,6,5.684,9,9,0,0,1.0,1,985,833,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""geneva"": [""100.0.4.0/24""],
+            ""rotterdam"": [""100.0.4.0/24""],
+            ""barcelona"": [""100.0.1.0/24""]
+        },
+        ""waypoint"": {
+            ""(geneva,100.0.4.0/24)"": [""basel""],
+            ""(rotterdam,100.0.4.0/24)"": [""basel""],
+            ""(barcelona,100.0.1.0/24)"": [""kiev""]
+        },
+        ""loadbalancing"": {
+            ""(geneva,100.0.4.0/24)"": 3,
+            ""(rotterdam,100.0.4.0/24)"": 3,
+            ""(barcelona,100.0.1.0/24)"": 3
+        }
+    }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,7,5.695,9,9,0,0,1.0,1,986,656,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""vienna"": [""100.0.9.0/24""],
+            ""praha"": [""100.0.4.0/24""],
+            ""paris"": [""100.0.29.0/24""]
+        },
+        ""waypoint"": {
+            ""(vienna,100.0.9.0/24)"": [""rotterdam""],
+            ""(praha,100.0.4.0/24)"": [""basel""],
+            ""(paris,100.0.29.0/24)"": [""london""]
+        },
+        ""loadbalancing"": {
+            ""(vienna,100.0.9.0/24)"": 3,
+            ""(praha,100.0.4.0/24)"": 2,
+            ""(paris,100.0.29.0/24)"": 2
+        }
+    }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,8,32.605,9,9,0,0,1.0,1,979,816,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""kiev"": [""100.0.4.0/24""],
+      ""budapest"": [""100.0.4.0/24""],
+      ""amsterdam"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(kiev,100.0.4.0/24)"": [""basel""],
+      ""(budapest,100.0.4.0/24)"": [""basel""],
+      ""(amsterdam,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(kiev,100.0.4.0/24)"": 2,
+      ""(budapest,100.0.4.0/24)"": 4,
+      ""(amsterdam,100.0.4.0/24)"": 7
+    }
+  }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,9,6.054,9,9,0,0,1.0,1,977,673,0,{},"{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""madrid"": [""100.0.29.0/24""],
+            ""barcelona"": [""100.0.29.0/24""],
+            ""warsaw"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(madrid,100.0.29.0/24)"": [""london""],
+            ""(barcelona,100.0.29.0/24)"": [""london""],
+            ""(warsaw,100.0.4.0/24)"": [""basel""]
+        },
+        ""loadbalancing"": {
+            ""(madrid,100.0.29.0/24)"": 2,
+            ""(barcelona,100.0.29.0/24)"": 2,
+            ""(warsaw,100.0.4.0/24)"": 2
+        }
+    }
+}"
+,,3,3,loadbalancing reachability waypoint,99,0,10,4.545,9,9,0,0,1.0,1,989,651,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""sofia"": [""100.0.9.0/24""],
+      ""strasbourg"": [""100.0.29.0/24""],
+      ""bratislava"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(sofia,100.0.9.0/24)"": [""rotterdam""],
+      ""(strasbourg,100.0.29.0/24)"": [""london""],
+      ""(bratislava,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(sofia,100.0.9.0/24)"": 4,
+      ""(strasbourg,100.0.29.0/24)"": 2,
+      ""(bratislava,100.0.4.0/24)"": 4
+    }
+  }
+}"
+,,11,3,loadbalancing reachability waypoint,99,0,0,14.792,33,33,0,0,1.0,1,1479,2519,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""athens"": [""100.0.29.0/24""],
+      ""strasbourg"": [""100.0.1.0/24""],
+      ""luxembourg"": [""100.0.4.0/24"", ""100.0.1.0/24""],
+      ""frankfurt"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.9.0/24""],
+      ""vienna"": [""100.0.1.0/24""],
+      ""istanbul"": [""100.0.9.0/24""],
+      ""kiev"": [""100.0.29.0/24""],
+      ""budapest"": [""100.0.29.0/24""],
+      ""rotterdam"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(athens,100.0.29.0/24)"": [""london""],
+      ""(strasbourg,100.0.1.0/24)"": [""kiev""],
+      ""(luxembourg,100.0.4.0/24)"": [""basel""],
+      ""(frankfurt,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""],
+      ""(luxembourg,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.1.0/24)"": [""kiev""],
+      ""(istanbul,100.0.9.0/24)"": [""rotterdam""],
+      ""(kiev,100.0.29.0/24)"": [""london""],
+      ""(budapest,100.0.29.0/24)"": [""london""],
+      ""(rotterdam,100.0.29.0/24)"": [""london""]
+    },
+    ""loadbalancing"": {
+      ""(athens,100.0.29.0/24)"": 3,
+      ""(strasbourg,100.0.1.0/24)"": 2,
+      ""(luxembourg,100.0.4.0/24)"": 4,
+      ""(frankfurt,100.0.29.0/24)"": 2,
+      ""(zurich,100.0.9.0/24)"": 3,
+      ""(luxembourg,100.0.1.0/24)"": 4,
+      ""(vienna,100.0.1.0/24)"": 2,
+      ""(istanbul,100.0.9.0/24)"": 2,
+      ""(kiev,100.0.29.0/24)"": 3,
+      ""(budapest,100.0.29.0/24)"": 3,
+      ""(rotterdam,100.0.29.0/24)"": 2
+    }
+  }
+}"
+,,11,3,loadbalancing reachability waypoint,99,0,1,16.257,33,33,0,0,1.0,1,1488,2938,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""geneva"": [""100.0.1.0/24"", ""100.0.4.0/24""],
+      ""lyon"": [""100.0.9.0/24""],
+      ""roma"": [""100.0.29.0/24""],
+      ""brussels"": [""100.0.1.0/24""],
+      ""bucharest"": [""100.0.1.0/24""],
+      ""marseille"": [""100.0.9.0/24""],
+      ""frankfurt"": [""100.0.9.0/24""],
+      ""rotterdam"": [""100.0.4.0/24""],
+      ""barcelona"": [""100.0.1.0/24""],
+      ""vienna"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(geneva,100.0.1.0/24)"": [""kiev""],
+      ""(lyon,100.0.9.0/24)"": [""rotterdam""],
+      ""(roma,100.0.29.0/24)"": [""london""],
+      ""(brussels,100.0.1.0/24)"": [""kiev""],
+      ""(bucharest,100.0.1.0/24)"": [""kiev""],
+      ""(marseille,100.0.9.0/24)"": [""rotterdam""],
+      ""(frankfurt,100.0.9.0/24)"": [""rotterdam""],
+      ""(geneva,100.0.4.0/24)"": [""basel""],
+      ""(rotterdam,100.0.4.0/24)"": [""basel""],
+      ""(barcelona,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.9.0/24)"": [""rotterdam""]
+    },
+    ""loadbalancing"": {
+      ""(geneva,100.0.1.0/24)"": 5,
+      ""(lyon,100.0.9.0/24)"": 6,
+      ""(roma,100.0.29.0/24)"": 2,
+      ""(brussels,100.0.1.0/24)"": 4,
+      ""(bucharest,100.0.1.0/24)"": 2,
+      ""(marseille,100.0.9.0/24)"": 4,
+      ""(frankfurt,100.0.9.0/24)"": 2,
+      ""(geneva,100.0.4.0/24)"": 3,
+      ""(rotterdam,100.0.4.0/24)"": 3,
+      ""(barcelona,100.0.1.0/24)"": 3,
+      ""(vienna,100.0.9.0/24)"": 3
+    }
+  }
+}"
+,,11,3,loadbalancing reachability waypoint,99,0,2,19.921,33,33,0,0,1.0,1,1503,3441,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""praha"": [""100.0.4.0/24""],
+      ""paris"": [""100.0.29.0/24""],
+      ""kiev"": [""100.0.4.0/24""],
+      ""budapest"": [""100.0.4.0/24""],
+      ""amsterdam"": [""100.0.4.0/24""],
+      ""madrid"": [""100.0.29.0/24""],
+      ""barcelona"": [""100.0.29.0/24""],
+      ""warsaw"": [""100.0.4.0/24""],
+      ""sofia"": [""100.0.9.0/24""],
+      ""strasbourg"": [""100.0.29.0/24""],
+      ""bratislava"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(praha,100.0.4.0/24)"": [""basel""],
+      ""(paris,100.0.29.0/24)"": [""london""],
+      ""(kiev,100.0.4.0/24)"": [""basel""],
+      ""(budapest,100.0.4.0/24)"": [""basel""],
+      ""(amsterdam,100.0.4.0/24)"": [""basel""],
+      ""(madrid,100.0.29.0/24)"": [""london""],
+      ""(barcelona,100.0.29.0/24)"": [""london""],
+      ""(warsaw,100.0.4.0/24)"": [""basel""],
+      ""(sofia,100.0.9.0/24)"": [""rotterdam""],
+      ""(strasbourg,100.0.29.0/24)"": [""london""],
+      ""(bratislava,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(praha,100.0.4.0/24)"": 2,
+      ""(paris,100.0.29.0/24)"": 2,
+      ""(kiev,100.0.4.0/24)"": 2,
+      ""(budapest,100.0.4.0/24)"": 4,
+      ""(amsterdam,100.0.4.0/24)"": 7,
+      ""(madrid,100.0.29.0/24)"": 2,
+      ""(barcelona,100.0.29.0/24)"": 2,
+      ""(warsaw,100.0.4.0/24)"": 2,
+      ""(sofia,100.0.9.0/24)"": 4,
+      ""(strasbourg,100.0.29.0/24)"": 2,
+      ""(bratislava,100.0.4.0/24)"": 4
+    }
+  }
+}"
+,,33,3,loadbalancing reachability waypoint,99,0,0,32.056,99,99,0,0,1.0,1,2862,5459,0,{},"{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""athens"": [""100.0.29.0/24""],
+      ""strasbourg"": [""100.0.1.0/24"", ""100.0.29.0/24""],
+      ""luxembourg"": [""100.0.4.0/24"", ""100.0.1.0/24""],
+      ""frankfurt"": [""100.0.29.0/24"", ""100.0.9.0/24""],
+      ""zurich"": [""100.0.9.0/24""],
+      ""vienna"": [""100.0.1.0/24"", ""100.0.9.0/24""],
+      ""istanbul"": [""100.0.9.0/24""],
+      ""kiev"": [""100.0.29.0/24"", ""100.0.4.0/24""],
+      ""budapest"": [""100.0.29.0/24"", ""100.0.4.0/24""],
+      ""rotterdam"": [""100.0.29.0/24"", ""100.0.4.0/24""],
+      ""geneva"": [""100.0.1.0/24"", ""100.0.4.0/24""],
+      ""lyon"": [""100.0.9.0/24""],
+      ""roma"": [""100.0.29.0/24""],
+      ""brussels"": [""100.0.1.0/24""],
+      ""bucharest"": [""100.0.1.0/24""],
+      ""marseille"": [""100.0.9.0/24""],
+      ""barcelona"": [""100.0.1.0/24"", ""100.0.29.0/24""],
+      ""praha"": [""100.0.4.0/24""],
+      ""paris"": [""100.0.29.0/24""],
+      ""amsterdam"": [""100.0.4.0/24""],
+      ""madrid"": [""100.0.29.0/24""],
+      ""warsaw"": [""100.0.4.0/24""],
+      ""sofia"": [""100.0.9.0/24""],
+      ""bratislava"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(athens,100.0.29.0/24)"": [""london""],
+      ""(strasbourg,100.0.1.0/24)"": [""kiev""],
+      ""(luxembourg,100.0.4.0/24)"": [""basel""],
+      ""(frankfurt,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""],
+      ""(luxembourg,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.1.0/24)"": [""kiev""],
+      ""(istanbul,100.0.9.0/24)"": [""rotterdam""],
+      ""(kiev,100.0.29.0/24)"": [""london""],
+      ""(budapest,100.0.29.0/24)"": [""london""],
+      ""(rotterdam,100.0.29.0/24)"": [""london""],
+      ""(geneva,100.0.1.0/24)"": [""kiev""],
+      ""(lyon,100.0.9.0/24)"": [""rotterdam""],
+      ""(roma,100.0.29.0/24)"": [""london""],
+      ""(brussels,100.0.1.0/24)"": [""kiev""],
+      ""(bucharest,100.0.1.0/24)"": [""kiev""],
+      ""(marseille,100.0.9.0/24)"": [""rotterdam""],
+      ""(frankfurt,100.0.9.0/24)"": [""rotterdam""],
+      ""(geneva,100.0.4.0/24)"": [""basel""],
+      ""(rotterdam,100.0.4.0/24)"": [""basel""],
+      ""(barcelona,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.9.0/24)"": [""rotterdam""],
+      ""(praha,100.0.4.0/24)"": [""basel""],
+      ""(paris,100.0.29.0/24)"": [""london""],
+      ""(kiev,100.0.4.0/24)"": [""basel""],
+      ""(budapest,100.0.4.0/24)"": [""basel""],
+      ""(amsterdam,100.0.4.0/24)"": [""basel""],
+      ""(madrid,100.0.29.0/24)"": [""london""],
+      ""(barcelona,100.0.29.0/24)"": [""london""],
+      ""(warsaw,100.0.4.0/24)"": [""basel""],
+      ""(sofia,100.0.9.0/24)"": [""rotterdam""],
+      ""(strasbourg,100.0.29.0/24)"": [""london""],
+      ""(bratislava,100.0.4.0/24)"": [""basel""]
+    },
+    ""loadbalancing"": {
+      ""(athens,100.0.29.0/24)"": 3,
+      ""(strasbourg,100.0.1.0/24)"": 2,
+      ""(luxembourg,100.0.4.0/24)"": 4,
+      ""(frankfurt,100.0.29.0/24)"": 2,
+      ""(zurich,100.0.9.0/24)"": 3,
+      ""(luxembourg,100.0.1.0/24)"": 4,
+      ""(vienna,100.0.1.0/24)"": 2,
+      ""(istanbul,100.0.9.0/24)"": 2,
+      ""(kiev,100.0.29.0/24)"": 3,
+      ""(budapest,100.0.29.0/24)"": 3,
+      ""(rotterdam,100.0.29.0/24)"": 2,
+      ""(geneva,100.0.1.0/24)"": 5,
+      ""(lyon,100.0.9.0/24)"": 6,
+      ""(roma,100.0.29.0/24)"": 2,
+      ""(brussels,100.0.1.0/24)"": 4,
+      ""(bucharest,100.0.1.0/24)"": 2,
+      ""(marseille,100.0.9.0/24)"": 4,
+      ""(frankfurt,100.0.9.0/24)"": 2,
+      ""(geneva,100.0.4.0/24)"": 3,
+      ""(rotterdam,100.0.4.0/24)"": 3,
+      ""(barcelona,100.0.1.0/24)"": 3,
+      ""(vienna,100.0.9.0/24)"": 3,
+      ""(praha,100.0.4.0/24)"": 2,
+      ""(paris,100.0.29.0/24)"": 2,
+      ""(kiev,100.0.4.0/24)"": 2,
+      ""(budapest,100.0.4.0/24)"": 4,
+      ""(amsterdam,100.0.4.0/24)"": 7,
+      ""(madrid,100.0.29.0/24)"": 2,
+      ""(barcelona,100.0.29.0/24)"": 2,
+      ""(warsaw,100.0.4.0/24)"": 2,
+      ""(sofia,100.0.9.0/24)"": 4,
+      ""(strasbourg,100.0.29.0/24)"": 2,
+      ""(bratislava,100.0.4.0/24)"": 4
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,0,2.721,2,2,0,0,1.0,0,688,287,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""paris"": [""100.0.4.0/24""]}, ""waypoint"": {""(paris,100.0.4.0/24)"": [""basel""]}}}"
+,,1,2,reachability waypoint,100,0,1,1.934,2,2,0,0,1.0,0,692,185,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""barcelona"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(barcelona,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,2,2.695,2,2,0,0,1.0,0,687,188,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""roma"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(roma,100.0.9.0/24)"": [""rotterdam""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,3,3.104,2,2,0,0,1.0,0,691,235,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""basel"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(basel,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,4,2.569,2,2,0,0,1.0,0,687,207,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""kiev"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(kiev,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,5,2.349,2,2,0,0,1.0,0,693,170,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""OK"",""result"":{""reachability"":{""vienna"":[""100.0.1.0/24""]},""waypoint"":{""(vienna,100.0.1.0/24)"":[""kiev""]}}}"
+,,1,2,reachability waypoint,100,0,6,3.683,2,2,0,0,1.0,0,691,290,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""basel"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(basel,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,7,3.165,2,2,0,0,1.0,0,687,241,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""barcelona"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(barcelona,100.0.4.0/24)"": [""basel""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,8,4.721,2,2,0,0,1.0,0,691,213,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""paris"": [""100.0.29.0/24""]
+        },
+        ""waypoint"": {
+            ""(paris,100.0.29.0/24)"": [""london""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,9,2.774,2,2,0,0,1.0,0,692,221,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""milan"":[""100.0.4.0/24""]},""waypoint"":{""(milan,100.0.4.0/24)"":[""basel""]}}}"
+,,1,2,reachability waypoint,100,0,10,3.299,2,2,0,0,1.0,0,690,218,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""praha"":[""100.0.1.0/24""]},""waypoint"":{""(praha,100.0.1.0/24)"":[""kiev""]}}}"
+,,1,2,reachability waypoint,100,0,11,2.971,2,2,0,0,1.0,0,696,227,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""rotterdam"": [""100.0.4.0/24""]}, ""waypoint"": {""(rotterdam,100.0.4.0/24)"": [""basel""]}}}"
+,,1,2,reachability waypoint,100,0,12,2.685,2,2,0,0,1.0,0,691,204,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""brussels"":[""100.0.9.0/24""]},""waypoint"":{""(brussels,100.0.9.0/24)"":[""rotterdam""]}}}"
+,,1,2,reachability waypoint,100,0,13,1.895,2,2,0,0,1.0,0,691,120,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""sofia"": [""100.0.1.0/24""]}, ""waypoint"": {""(sofia,100.0.1.0/24)"": [""kiev""]}}}"
+,,1,2,reachability waypoint,100,0,14,2.959,2,2,0,0,1.0,0,691,194,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""frankfurt"":[""100.0.4.0/24""]},""waypoint"":{""(frankfurt,100.0.4.0/24)"":[""basel""]}}}"
+,,1,2,reachability waypoint,100,0,15,3.292,2,2,0,0,1.0,0,691,241,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""roma"":[""100.0.4.0/24""]},""waypoint"":{""(roma,100.0.4.0/24)"":[""basel""]}}}"
+,,1,2,reachability waypoint,100,0,16,2.884,2,2,0,0,1.0,0,694,175,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""kiev"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(kiev,100.0.4.0/24)"": [""basel""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,17,5.835,2,2,0,0,1.0,0,691,599,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""kiev"": [""100.0.29.0/24""]}, ""waypoint"": {""(kiev,100.0.29.0/24)"": [""london""]}}}"
+,,1,2,reachability waypoint,100,0,18,2.848,2,2,0,0,1.0,0,691,226,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""reachability"": {
+        ""bratislava"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+        ""(bratislava,100.0.4.0/24)"": [""basel""]
+    }
+}"
+,,1,2,reachability waypoint,100,0,19,2.191,2,2,0,0,1.0,0,693,180,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""reachability"": {
+    ""luxembourg"": [""100.0.4.0/24""]
+  },
+  ""waypoint"": {
+    ""(luxembourg,100.0.4.0/24)"": [""basel""]
+  }
+}"
+,,1,2,reachability waypoint,100,0,20,2.354,2,2,0,0,1.0,0,690,183,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,21,2.603,2,2,0,0,1.0,0,689,223,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""strasbourg"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(strasbourg,100.0.4.0/24)"": [""basel""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,22,2.586,2,1,1,1,0.5,0,687,201,0,"{'dictionary_item_removed': [""root['loadbalancing']""], 'values_changed': {""root['waypoint']"": {'new_value': {'(""budapest"",""100.0.29.0/24"")': ['london']}, 'old_value': {'(budapest,100.0.29.0/24)': ['london']}}}}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""budapest"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(\""budapest\"",\""100.0.29.0/24\"")"": [""london""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,23,2.718,2,2,0,0,1.0,0,693,225,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""zurich"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,24,2.724,2,2,0,0,1.0,0,691,205,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""brussels"":[""100.0.29.0/24""]},""waypoint"":{""(brussels,100.0.29.0/24)"":[""london""]}}}"
+,,1,2,reachability waypoint,100,0,25,2.572,2,2,0,0,1.0,0,687,221,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""madrid"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(madrid,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,26,2.702,2,2,0,0,1.0,0,691,239,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""frankfurt"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(frankfurt,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,27,3.105,2,2,0,0,1.0,0,688,235,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""brussels"": [""100.0.1.0/24""]
+        },
+        ""waypoint"": {
+            ""(brussels,100.0.1.0/24)"": [""kiev""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,28,2.863,2,2,0,0,1.0,0,689,225,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(bucharest,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,29,2.495,2,2,0,0,1.0,0,688,172,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""warsaw"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(warsaw,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,30,3.032,2,2,0,0,1.0,0,693,223,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,31,2.535,2,2,0,0,1.0,0,689,218,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""OK"",
+  ""result"": {
+    ""reachability"": {
+      ""luxembourg"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(luxembourg,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,32,2.074,2,2,0,0,1.0,0,691,131,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""vienna"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(vienna,100.0.9.0/24)"": [""rotterdam""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,33,2.349,2,2,0,0,1.0,0,687,136,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""athens"":[""100.0.29.0/24""]},""waypoint"":{""(athens,100.0.29.0/24)"":[""london""]}}}"
+,,1,2,reachability waypoint,100,0,34,3.169,2,2,0,0,1.0,0,691,269,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""zurich"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(zurich,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,35,2.57,2,2,0,0,1.0,0,687,196,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""paris"":[""100.0.1.0/24""]},""waypoint"":{""(paris,100.0.1.0/24)"":[""kiev""]}}}"
+,,1,2,reachability waypoint,100,0,36,2.689,2,2,0,0,1.0,0,687,222,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""vienna"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(vienna,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,37,2.314,2,2,0,0,1.0,0,692,227,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""basel"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(basel,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,38,2.766,2,2,0,0,1.0,0,691,223,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""milan"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(milan,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,39,3.443,2,2,0,0,1.0,0,693,226,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""geneva"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(geneva,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,40,3.025,2,2,0,0,1.0,0,692,185,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""london"":[""100.0.1.0/24""]},""waypoint"":{""(london,100.0.1.0/24)"":[""kiev""]}}}"
+,,1,2,reachability waypoint,100,0,41,2.673,2,2,0,0,1.0,0,692,219,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""zurich"": [""100.0.29.0/24""]
+        },
+        ""waypoint"": {
+            ""(zurich,100.0.29.0/24)"": [""london""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,42,2.698,2,2,0,0,1.0,0,692,220,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""roma"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(roma,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,43,2.146,2,2,0,0,1.0,0,692,167,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,44,2.565,2,2,0,0,1.0,0,687,164,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""geneva"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(geneva,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,45,2.656,2,2,0,0,1.0,0,695,189,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""bucharest"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(bucharest,100.0.9.0/24)"": [""rotterdam""]
+        }
+    }
+}"
+,,1,2,reachability waypoint,100,0,46,2.513,2,2,0,0,1.0,0,691,177,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""amsterdam"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(amsterdam,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,47,2.395,2,2,0,0,1.0,0,687,165,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""madrid"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(madrid,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,1,2,reachability waypoint,100,0,48,2.395,2,2,0,0,1.0,0,689,177,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""reachability"": {
+        ""strasbourg"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+        ""(strasbourg,100.0.1.0/24)"": [""kiev""]
+    }
+}"
+,,1,2,reachability waypoint,100,0,49,2.559,2,2,0,0,1.0,0,691,181,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""warsaw"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(warsaw,100.0.9.0/24)"": [""rotterdam""]
+        }
+    }
+}"
+,,2,2,reachability waypoint,100,0,0,3.053,4,4,0,0,1.0,0,733,290,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.4.0/24""],
+      ""barcelona"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(paris,100.0.4.0/24)"": [""basel""],
+      ""(barcelona,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,1,2.599,4,4,0,0,1.0,0,728,209,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""roma"": [""100.0.9.0/24""],
+      ""basel"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(roma,100.0.9.0/24)"": [""rotterdam""],
+      ""(basel,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,2,3.652,4,4,0,0,1.0,0,732,411,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""kiev"": [""100.0.9.0/24""], ""vienna"": [""100.0.1.0/24""]}, ""waypoint"": {""(kiev,100.0.9.0/24)"": [""rotterdam""], ""(vienna,100.0.1.0/24)"": [""kiev""]}}}"
+,,2,2,reachability waypoint,100,0,3,2.875,4,4,0,0,1.0,0,734,263,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""basel"":[""100.0.29.0/24""],""barcelona"":[""100.0.4.0/24""]},""waypoint"":{""(basel,100.0.29.0/24)"":[""london""],""(barcelona,100.0.4.0/24)"":[""basel""]}}}"
+,,2,2,reachability waypoint,100,0,4,3.923,4,4,0,0,1.0,0,731,404,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.29.0/24""],
+      ""milan"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(paris,100.0.29.0/24)"": [""london""],
+      ""(milan,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,5,3.517,4,4,0,0,1.0,0,735,401,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""praha"": [""100.0.1.0/24""],
+      ""rotterdam"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(praha,100.0.1.0/24)"": [""kiev""],
+      ""(rotterdam,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,6,3.311,4,4,0,0,1.0,0,722,364,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""brussels"": [""100.0.9.0/24""], ""sofia"": [""100.0.1.0/24""]}, ""waypoint"": {""(brussels,100.0.9.0/24)"": [""rotterdam""], ""(sofia,100.0.1.0/24)"": [""kiev""]}}}"
+,,2,2,reachability waypoint,100,0,7,3.167,4,4,0,0,1.0,0,727,341,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""frankfurt"": [""100.0.4.0/24""],
+      ""roma"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(frankfurt,100.0.4.0/24)"": [""basel""],
+      ""(roma,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,8,3.025,4,4,0,0,1.0,0,729,292,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""kiev"": [""100.0.4.0/24"", ""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(kiev,100.0.4.0/24)"": [""basel""],
+      ""(kiev,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,9,3.093,4,4,0,0,1.0,0,732,274,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bratislava"": [""100.0.4.0/24""],
+      ""luxembourg"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(bratislava,100.0.4.0/24)"": [""basel""],
+      ""(luxembourg,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,10,2.709,4,4,0,0,1.0,0,734,285,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.4.0/24""],
+      ""strasbourg"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.4.0/24)"": [""basel""],
+      ""(strasbourg,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,11,2.636,4,4,0,0,1.0,0,731,199,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""budapest"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(budapest,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,12,3.721,4,4,0,0,1.0,0,725,376,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""brussels"": [""100.0.29.0/24""],
+      ""madrid"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(brussels,100.0.29.0/24)"": [""london""],
+      ""(madrid,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,13,3.035,4,4,0,0,1.0,0,731,297,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""frankfurt"": [""100.0.1.0/24""],
+            ""brussels"": [""100.0.1.0/24""]
+        },
+        ""waypoint"": {
+            ""(frankfurt,100.0.1.0/24)"": [""kiev""],
+            ""(brussels,100.0.1.0/24)"": [""kiev""]
+        }
+    }
+}"
+,,2,2,reachability waypoint,100,0,14,3.651,4,4,0,0,1.0,0,733,377,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.4.0/24""],
+      ""warsaw"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(bucharest,100.0.4.0/24)"": [""basel""],
+      ""(warsaw,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,15,3.296,4,4,0,0,1.0,0,731,396,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""marseille"": [""100.0.1.0/24""],
+            ""luxembourg"": [""100.0.1.0/24""]
+        },
+        ""waypoint"": {
+            ""(marseille,100.0.1.0/24)"": [""kiev""],
+            ""(luxembourg,100.0.1.0/24)"": [""kiev""]
+        }
+    }
+}"
+,,2,2,reachability waypoint,100,0,16,3.613,4,4,0,0,1.0,0,731,443,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""vienna"": [""100.0.9.0/24""],
+      ""athens"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(vienna,100.0.9.0/24)"": [""rotterdam""],
+      ""(athens,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,17,4.077,4,4,0,0,1.0,0,729,465,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""zurich"": [""100.0.1.0/24""],
+      ""paris"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(zurich,100.0.1.0/24)"": [""kiev""],
+      ""(paris,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,18,4.803,4,4,0,0,1.0,0,725,487,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""vienna"": [""100.0.4.0/24""], ""basel"": [""100.0.9.0/24""]}, ""waypoint"": {""(vienna,100.0.4.0/24)"": [""basel""], ""(basel,100.0.9.0/24)"": [""rotterdam""]}}}"
+,,2,2,reachability waypoint,100,0,19,3.885,4,4,0,0,1.0,0,729,377,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""milan"": [""100.0.29.0/24""],
+            ""geneva"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(milan,100.0.29.0/24)"": [""london""],
+            ""(geneva,100.0.4.0/24)"": [""basel""]
+        }
+    }
+}"
+,,2,2,reachability waypoint,100,0,20,3.387,4,4,0,0,1.0,0,730,307,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""london"": [""100.0.1.0/24""],
+            ""zurich"": [""100.0.29.0/24""]
+        },
+        ""waypoint"": {
+            ""(london,100.0.1.0/24)"": [""kiev""],
+            ""(zurich,100.0.29.0/24)"": [""london""]
+        }
+    }
+}"
+,,2,2,reachability waypoint,100,0,21,3.992,4,4,0,0,1.0,0,727,474,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""roma"": [""100.0.29.0/24""],
+      ""marseille"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(roma,100.0.29.0/24)"": [""london""],
+      ""(marseille,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,22,3.787,4,4,0,0,1.0,0,733,404,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""geneva"": [""100.0.29.0/24""],
+      ""bucharest"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(geneva,100.0.29.0/24)"": [""london""],
+      ""(bucharest,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,23,2.667,4,4,0,0,1.0,0,731,194,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""amsterdam"": [""100.0.9.0/24""],
+      ""madrid"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(amsterdam,100.0.9.0/24)"": [""rotterdam""],
+      ""(madrid,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,2,2,reachability waypoint,100,0,24,2.965,4,4,0,0,1.0,0,727,349,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""strasbourg"": [""100.0.1.0/24""],
+      ""warsaw"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(strasbourg,100.0.1.0/24)"": [""kiev""],
+      ""(warsaw,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,0,5.86,10,10,0,0,1.0,0,844,821,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.4.0/24""],
+      ""barcelona"": [""100.0.1.0/24""],
+      ""roma"": [""100.0.9.0/24""],
+      ""basel"": [""100.0.1.0/24""],
+      ""kiev"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(paris,100.0.4.0/24)"": [""basel""],
+      ""(barcelona,100.0.1.0/24)"": [""kiev""],
+      ""(roma,100.0.9.0/24)"": [""rotterdam""],
+      ""(basel,100.0.1.0/24)"": [""kiev""],
+      ""(kiev,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,1,26.967,10,10,0,0,1.0,0,848,930,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""vienna"":[""100.0.1.0/24""],""basel"":[""100.0.29.0/24""],""barcelona"":[""100.0.4.0/24""],""paris"":[""100.0.29.0/24""],""milan"":[""100.0.4.0/24""]},""waypoint"":{""(vienna,100.0.1.0/24)"":[""kiev""],""(basel,100.0.29.0/24)"":[""london""],""(barcelona,100.0.4.0/24)"":[""basel""],""(paris,100.0.29.0/24)"":[""london""],""(milan,100.0.4.0/24)"":[""basel""]}}}"
+,,5,2,reachability waypoint,100,0,2,5.573,10,10,0,0,1.0,0,852,519,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""OK"",
+    ""result"": {
+        ""reachability"": {
+            ""praha"": [""100.0.1.0/24""],
+            ""rotterdam"": [""100.0.4.0/24""],
+            ""brussels"": [""100.0.9.0/24""],
+            ""sofia"": [""100.0.1.0/24""],
+            ""frankfurt"": [""100.0.4.0/24""]
+        },
+        ""waypoint"": {
+            ""(praha,100.0.1.0/24)"": [""kiev""],
+            ""(rotterdam,100.0.4.0/24)"": [""basel""],
+            ""(brussels,100.0.9.0/24)"": [""rotterdam""],
+            ""(sofia,100.0.1.0/24)"": [""kiev""],
+            ""(frankfurt,100.0.4.0/24)"": [""basel""]
+        }
+    }
+}"
+,,5,2,reachability waypoint,100,0,3,6.695,10,10,0,0,1.0,0,859,1033,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""roma"": [""100.0.4.0/24""],
+      ""kiev"": [""100.0.4.0/24"", ""100.0.29.0/24""],
+      ""bratislava"": [""100.0.4.0/24""],
+      ""luxembourg"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(roma,100.0.4.0/24)"": [""basel""],
+      ""(kiev,100.0.4.0/24)"": [""basel""],
+      ""(kiev,100.0.29.0/24)"": [""london""],
+      ""(bratislava,100.0.4.0/24)"": [""basel""],
+      ""(luxembourg,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,4,4.759,10,10,0,0,1.0,0,850,650,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.4.0/24""],
+      ""strasbourg"": [""100.0.4.0/24""],
+      ""budapest"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.9.0/24""],
+      ""brussels"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.4.0/24)"": [""basel""],
+      ""(strasbourg,100.0.4.0/24)"": [""basel""],
+      ""(budapest,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""],
+      ""(brussels,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,5,5.922,10,10,0,0,1.0,0,841,883,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""madrid"": [""100.0.1.0/24""],
+      ""frankfurt"": [""100.0.1.0/24""],
+      ""brussels"": [""100.0.1.0/24""],
+      ""bucharest"": [""100.0.4.0/24""],
+      ""warsaw"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(madrid,100.0.1.0/24)"": [""kiev""],
+      ""(frankfurt,100.0.1.0/24)"": [""kiev""],
+      ""(brussels,100.0.1.0/24)"": [""kiev""],
+      ""(bucharest,100.0.4.0/24)"": [""basel""],
+      ""(warsaw,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,6,5.536,10,10,0,0,1.0,0,843,847,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.1.0/24""],
+      ""luxembourg"": [""100.0.1.0/24""],
+      ""vienna"": [""100.0.9.0/24""],
+      ""athens"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.1.0/24)"": [""kiev""],
+      ""(luxembourg,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.9.0/24)"": [""rotterdam""],
+      ""(athens,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.1.0/24)"": [""kiev""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,7,5.731,10,10,0,0,1.0,0,843,758,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.1.0/24""],
+      ""vienna"": [""100.0.4.0/24""],
+      ""basel"": [""100.0.9.0/24""],
+      ""milan"": [""100.0.29.0/24""],
+      ""geneva"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(paris,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.4.0/24)"": [""basel""],
+      ""(basel,100.0.9.0/24)"": [""rotterdam""],
+      ""(milan,100.0.29.0/24)"": [""london""],
+      ""(geneva,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,8,5.934,10,10,0,0,1.0,0,853,861,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""london"": [""100.0.1.0/24""],
+      ""zurich"": [""100.0.29.0/24""],
+      ""roma"": [""100.0.29.0/24""],
+      ""marseille"": [""100.0.29.0/24""],
+      ""geneva"": [""100.0.29.0/24""]
+    },
+    ""waypoint"": {
+      ""(london,100.0.1.0/24)"": [""kiev""],
+      ""(zurich,100.0.29.0/24)"": [""london""],
+      ""(roma,100.0.29.0/24)"": [""london""],
+      ""(marseille,100.0.29.0/24)"": [""london""],
+      ""(geneva,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,5,2,reachability waypoint,100,0,9,7.369,10,10,0,0,1.0,0,846,1056,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.9.0/24""],
+      ""amsterdam"": [""100.0.9.0/24""],
+      ""madrid"": [""100.0.4.0/24""],
+      ""strasbourg"": [""100.0.1.0/24""],
+      ""warsaw"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(bucharest,100.0.9.0/24)"": [""rotterdam""],
+      ""(amsterdam,100.0.9.0/24)"": [""rotterdam""],
+      ""(madrid,100.0.4.0/24)"": [""basel""],
+      ""(strasbourg,100.0.1.0/24)"": [""kiev""],
+      ""(warsaw,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+,,10,2,reachability waypoint,100,0,0,11.978,20,20,0,0,1.0,0,1032,1916,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""OK"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.4.0/24"", ""100.0.29.0/24""],
+      ""barcelona"": [""100.0.1.0/24"", ""100.0.4.0/24""],
+      ""roma"": [""100.0.9.0/24""],
+      ""basel"": [""100.0.1.0/24"", ""100.0.29.0/24""],
+      ""kiev"": [""100.0.9.0/24""],
+      ""vienna"": [""100.0.1.0/24""],
+      ""milan"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(paris,100.0.4.0/24)"": [""basel""],
+      ""(barcelona,100.0.1.0/24)"": [""kiev""],
+      ""(roma,100.0.9.0/24)"": [""rotterdam""],
+      ""(basel,100.0.1.0/24)"": [""kiev""],
+      ""(kiev,100.0.9.0/24)"": [""rotterdam""],
+      ""(vienna,100.0.1.0/24)"": [""kiev""],
+      ""(basel,100.0.29.0/24)"": [""london""],
+      ""(barcelona,100.0.4.0/24)"": [""basel""],
+      ""(paris,100.0.29.0/24)"": [""london""],
+      ""(milan,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,10,2,reachability waypoint,100,0,1,13.104,20,20,0,0,1.0,0,1055,2193,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""praha"": [""100.0.1.0/24""],
+      ""rotterdam"": [""100.0.4.0/24""],
+      ""brussels"": [""100.0.9.0/24""],
+      ""sofia"": [""100.0.1.0/24""],
+      ""frankfurt"": [""100.0.4.0/24""],
+      ""roma"": [""100.0.4.0/24""],
+      ""kiev"": [""100.0.4.0/24"", ""100.0.29.0/24""],
+      ""bratislava"": [""100.0.4.0/24""],
+      ""luxembourg"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(praha,100.0.1.0/24)"": [""kiev""],
+      ""(rotterdam,100.0.4.0/24)"": [""basel""],
+      ""(brussels,100.0.9.0/24)"": [""rotterdam""],
+      ""(sofia,100.0.1.0/24)"": [""kiev""],
+      ""(frankfurt,100.0.4.0/24)"": [""basel""],
+      ""(roma,100.0.4.0/24)"": [""basel""],
+      ""(kiev,100.0.4.0/24)"": [""basel""],
+      ""(kiev,100.0.29.0/24)"": [""london""],
+      ""(bratislava,100.0.4.0/24)"": [""basel""],
+      ""(luxembourg,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,10,2,reachability waypoint,100,0,2,8.609,20,20,0,0,1.0,0,1054,1293,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.4.0/24""],
+      ""strasbourg"": [""100.0.4.0/24""],
+      ""budapest"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.9.0/24""],
+      ""brussels"": [""100.0.29.0/24"", ""100.0.1.0/24""],
+      ""madrid"": [""100.0.1.0/24""],
+      ""frankfurt"": [""100.0.1.0/24""],
+      ""bucharest"": [""100.0.4.0/24""],
+      ""warsaw"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.4.0/24)"": [""basel""],
+      ""(strasbourg,100.0.4.0/24)"": [""basel""],
+      ""(budapest,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""],
+      ""(brussels,100.0.29.0/24)"": [""london""],
+      ""(madrid,100.0.1.0/24)"": [""kiev""],
+      ""(frankfurt,100.0.1.0/24)"": [""kiev""],
+      ""(brussels,100.0.1.0/24)"": [""kiev""],
+      ""(bucharest,100.0.4.0/24)"": [""basel""],
+      ""(warsaw,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,10,2,reachability waypoint,100,0,3,10.322,20,20,0,0,1.0,0,1035,1720,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.1.0/24""],
+      ""luxembourg"": [""100.0.1.0/24""],
+      ""vienna"": [""100.0.9.0/24"", ""100.0.4.0/24""],
+      ""athens"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.1.0/24""],
+      ""paris"": [""100.0.1.0/24""],
+      ""basel"": [""100.0.9.0/24""],
+      ""milan"": [""100.0.29.0/24""],
+      ""geneva"": [""100.0.4.0/24""]
+    },
+    ""waypoint"": {
+      ""(marseille,100.0.1.0/24)"": [""kiev""],
+      ""(luxembourg,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.9.0/24)"": [""rotterdam""],
+      ""(athens,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.1.0/24)"": [""kiev""],
+      ""(paris,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.4.0/24)"": [""basel""],
+      ""(basel,100.0.9.0/24)"": [""rotterdam""],
+      ""(milan,100.0.29.0/24)"": [""london""],
+      ""(geneva,100.0.4.0/24)"": [""basel""]
+    }
+  }
+}"
+,,10,2,reachability waypoint,100,0,4,14.432,20,20,0,0,1.0,0,1033,2302,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""london"": [""100.0.1.0/24""],
+            ""zurich"": [""100.0.29.0/24""],
+            ""roma"": [""100.0.29.0/24""],
+            ""marseille"": [""100.0.29.0/24""],
+            ""geneva"": [""100.0.29.0/24""],
+            ""bucharest"": [""100.0.9.0/24""],
+            ""amsterdam"": [""100.0.9.0/24""],
+            ""madrid"": [""100.0.4.0/24""],
+            ""strasbourg"": [""100.0.1.0/24""],
+            ""warsaw"": [""100.0.9.0/24""]
+        },
+        ""waypoint"": {
+            ""(london,100.0.1.0/24)"": [""kiev""],
+            ""(zurich,100.0.29.0/24)"": [""london""],
+            ""(roma,100.0.29.0/24)"": [""london""],
+            ""(marseille,100.0.29.0/24)"": [""london""],
+            ""(geneva,100.0.29.0/24)"": [""london""],
+            ""(bucharest,100.0.9.0/24)"": [""rotterdam""],
+            ""(amsterdam,100.0.9.0/24)"": [""rotterdam""],
+            ""(madrid,100.0.4.0/24)"": [""basel""],
+            ""(strasbourg,100.0.1.0/24)"": [""kiev""],
+            ""(warsaw,100.0.9.0/24)"": [""rotterdam""]
+        }
+    }
+}"
+,,25,2,reachability waypoint,100,0,0,23.24,50,50,0,0,1.0,0,1617,4225,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.4.0/24"", ""100.0.29.0/24""],
+      ""barcelona"": [""100.0.1.0/24"", ""100.0.4.0/24""],
+      ""roma"": [""100.0.9.0/24"", ""100.0.4.0/24""],
+      ""basel"": [""100.0.1.0/24"", ""100.0.29.0/24""],
+      ""kiev"": [""100.0.9.0/24"", ""100.0.4.0/24"", ""100.0.29.0/24""],
+      ""vienna"": [""100.0.1.0/24""],
+      ""milan"": [""100.0.4.0/24""],
+      ""praha"": [""100.0.1.0/24""],
+      ""rotterdam"": [""100.0.4.0/24""],
+      ""brussels"": [""100.0.9.0/24"", ""100.0.29.0/24""],
+      ""sofia"": [""100.0.1.0/24""],
+      ""frankfurt"": [""100.0.4.0/24""],
+      ""bratislava"": [""100.0.4.0/24""],
+      ""luxembourg"": [""100.0.4.0/24""],
+      ""marseille"": [""100.0.4.0/24""],
+      ""strasbourg"": [""100.0.4.0/24""],
+      ""budapest"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.9.0/24""]
+    },
+    ""waypoint"": {
+      ""(paris,100.0.4.0/24)"": [""basel""],
+      ""(barcelona,100.0.1.0/24)"": [""kiev""],
+      ""(roma,100.0.9.0/24)"": [""rotterdam""],
+      ""(basel,100.0.1.0/24)"": [""kiev""],
+      ""(kiev,100.0.9.0/24)"": [""rotterdam""],
+      ""(vienna,100.0.1.0/24)"": [""kiev""],
+      ""(basel,100.0.29.0/24)"": [""london""],
+      ""(barcelona,100.0.4.0/24)"": [""basel""],
+      ""(paris,100.0.29.0/24)"": [""london""],
+      ""(milan,100.0.4.0/24)"": [""basel""],
+      ""(praha,100.0.1.0/24)"": [""kiev""],
+      ""(rotterdam,100.0.4.0/24)"": [""basel""],
+      ""(brussels,100.0.9.0/24)"": [""rotterdam""],
+      ""(sofia,100.0.1.0/24)"": [""kiev""],
+      ""(frankfurt,100.0.4.0/24)"": [""basel""],
+      ""(roma,100.0.4.0/24)"": [""basel""],
+      ""(kiev,100.0.4.0/24)"": [""basel""],
+      ""(kiev,100.0.29.0/24)"": [""london""],
+      ""(bratislava,100.0.4.0/24)"": [""basel""],
+      ""(luxembourg,100.0.4.0/24)"": [""basel""],
+      ""(marseille,100.0.4.0/24)"": [""basel""],
+      ""(strasbourg,100.0.4.0/24)"": [""basel""],
+      ""(budapest,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.9.0/24)"": [""rotterdam""],
+      ""(brussels,100.0.29.0/24)"": [""london""]
+    }
+  }
+}"
+,,25,2,reachability waypoint,100,0,1,27.893,50,50,0,0,1.0,0,1636,4878,0,"{'dictionary_item_removed': [""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""madrid"": [""100.0.1.0/24"", ""100.0.4.0/24""],
+      ""frankfurt"": [""100.0.1.0/24""],
+      ""brussels"": [""100.0.1.0/24""],
+      ""bucharest"": [""100.0.4.0/24"", ""100.0.9.0/24""],
+      ""warsaw"": [""100.0.4.0/24"", ""100.0.9.0/24""],
+      ""marseille"": [""100.0.1.0/24"", ""100.0.29.0/24""],
+      ""luxembourg"": [""100.0.1.0/24""],
+      ""vienna"": [""100.0.9.0/24"", ""100.0.4.0/24""],
+      ""athens"": [""100.0.29.0/24""],
+      ""zurich"": [""100.0.1.0/24"", ""100.0.29.0/24""],
+      ""paris"": [""100.0.1.0/24""],
+      ""basel"": [""100.0.9.0/24""],
+      ""milan"": [""100.0.29.0/24""],
+      ""geneva"": [""100.0.4.0/24"", ""100.0.29.0/24""],
+      ""london"": [""100.0.1.0/24""],
+      ""roma"": [""100.0.29.0/24""],
+      ""amsterdam"": [""100.0.9.0/24""],
+      ""strasbourg"": [""100.0.1.0/24""]
+    },
+    ""waypoint"": {
+      ""(madrid,100.0.1.0/24)"": [""kiev""],
+      ""(frankfurt,100.0.1.0/24)"": [""kiev""],
+      ""(brussels,100.0.1.0/24)"": [""kiev""],
+      ""(bucharest,100.0.4.0/24)"": [""basel""],
+      ""(warsaw,100.0.4.0/24)"": [""basel""],
+      ""(marseille,100.0.1.0/24)"": [""kiev""],
+      ""(luxembourg,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.9.0/24)"": [""rotterdam""],
+      ""(athens,100.0.29.0/24)"": [""london""],
+      ""(zurich,100.0.1.0/24)"": [""kiev""],
+      ""(paris,100.0.1.0/24)"": [""kiev""],
+      ""(vienna,100.0.4.0/24)"": [""basel""],
+      ""(basel,100.0.9.0/24)"": [""rotterdam""],
+      ""(milan,100.0.29.0/24)"": [""london""],
+      ""(geneva,100.0.4.0/24)"": [""basel""],
+      ""(london,100.0.1.0/24)"": [""kiev""],
+      ""(zurich,100.0.29.0/24)"": [""london""],
+      ""(roma,100.0.29.0/24)"": [""london""],
+      ""(marseille,100.0.29.0/24)"": [""london""],
+      ""(geneva,100.0.29.0/24)"": [""london""],
+      ""(bucharest,100.0.9.0/24)"": [""rotterdam""],
+      ""(amsterdam,100.0.9.0/24)"": [""rotterdam""],
+      ""(madrid,100.0.4.0/24)"": [""basel""],
+      ""(strasbourg,100.0.1.0/24)"": [""kiev""],
+      ""(warsaw,100.0.9.0/24)"": [""rotterdam""]
+    }
+  }
+}"
+JSONDecodeError: Unterminated string starting at: line 9 column 32 (char 337),,50,2,reachability waypoint,100,0,0,46.215,0,0,0,0,0,0,0,0,0,,
+,,1,1,reachability,100,0,0,2.418,1,1,0,0,1.0,0,515,109,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""istanbul"":[""100.0.4.0/24""]}}}"
+,,1,1,reachability,100,0,1,2.271,1,1,0,0,1.0,0,514,142,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""milan"": [""100.0.1.0/24""]}}}"
+,,1,1,reachability,100,0,2,2.254,1,1,0,0,1.0,0,518,126,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""sofia"": [""100.0.18.0/24""]}}}"
+,,1,1,reachability,100,0,3,1.943,1,1,0,0,1.0,0,520,123,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""paris"":[""100.0.24.0/24""]}}}"
+,,1,1,reachability,100,0,4,2.047,1,1,0,0,1.0,0,519,146,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""marseille"": [""100.0.0.0/24""]
+    }
+  }
+}"
+,,1,1,reachability,100,0,5,2.56,1,1,0,0,1.0,0,518,139,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""kiev"": [""100.0.22.0/24""]}}}"
+,,1,1,reachability,100,0,6,1.922,1,1,0,0,1.0,0,514,112,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""milan"":[""100.0.10.0/24""]}}}"
+,,1,1,reachability,100,0,7,2.275,1,1,0,0,1.0,0,520,99,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""london"": [""100.0.1.0/24""]}}}"
+,,1,1,reachability,100,0,8,2.001,1,1,0,0,1.0,0,515,119,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""marseille"": [""100.0.1.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,9,2.401,1,1,0,0,1.0,0,518,119,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""athens"":[""100.0.25.0/24""]}}}"
+,,1,1,reachability,100,0,10,2.762,1,1,0,0,1.0,0,514,118,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""paris"":[""100.0.18.0/24""]}}}"
+,,1,1,reachability,100,0,11,1.952,1,1,0,0,1.0,0,520,115,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""warsaw"": [""100.0.9.0/24""]}}}"
+,,1,1,reachability,100,0,12,2.45,1,1,0,0,1.0,0,520,97,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""frankfurt"":[""100.0.13.0/24""]}}}"
+,,1,1,reachability,100,0,13,2.324,1,1,0,0,1.0,0,514,121,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""lyon"": [""100.0.13.0/24""]}}}"
+,,1,1,reachability,100,0,14,2.275,1,1,0,0,1.0,0,520,120,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""athens"": [""100.0.14.0/24""]}}}"
+,,1,1,reachability,100,0,15,2.082,1,1,0,0,1.0,0,514,127,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""frankfurt"": [""100.0.31.0/24""]}}}"
+,,1,1,reachability,100,0,16,2.225,1,1,0,0,1.0,0,519,123,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""istanbul"": [""100.0.8.0/24""]}}}"
+,,1,1,reachability,100,0,17,1.998,1,1,0,0,1.0,0,521,104,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""luxembourg"":[""100.0.14.0/24""]}}}"
+,,1,1,reachability,100,0,18,2.093,1,1,0,0,1.0,0,514,110,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""sofia"":[""100.0.4.0/24""]}}}"
+,,1,1,reachability,100,0,19,3.994,1,1,0,0,1.0,0,520,322,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""frankfurt"": [""100.0.1.0/24""]}}}"
+,,1,1,reachability,100,0,20,1.946,1,1,0,0,1.0,0,518,119,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""paris"": [""100.0.9.0/24""]}}}"
+,,1,1,reachability,100,0,21,1.747,1,1,0,0,1.0,0,519,110,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""bucharest"":[""100.0.31.0/24""]}}}"
+,,1,1,reachability,100,0,22,1.938,1,1,0,0,1.0,0,518,113,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""amsterdam"":[""100.0.27.0/24""]}}}"
+,,1,1,reachability,100,0,23,2.32,1,1,0,0,1.0,0,514,145,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""brussels"": [""100.0.31.0/24""]}}}"
+,,1,1,reachability,100,0,24,1.816,1,1,0,0,1.0,0,518,115,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""rotterdam"": [""100.0.24.0/24""]}}}"
+,,1,1,reachability,100,0,25,2.688,1,1,0,0,1.0,0,518,186,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.22.0/24""]}}}"
+,,1,1,reachability,100,0,26,2.083,1,1,0,0,1.0,0,513,101,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""roma"": [""100.0.32.0/24""]}}}"
+,,1,1,reachability,100,0,27,2.015,1,1,0,0,1.0,0,518,111,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""sofia"":[""100.0.10.0/24""]}}}"
+,,1,1,reachability,100,0,28,1.814,1,1,0,0,1.0,0,520,105,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""lyon"": [""100.0.8.0/24""]}}}"
+,,1,1,reachability,100,0,29,1.674,1,1,0,0,1.0,0,518,118,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""zurich"": [""100.0.9.0/24""]}}}"
+,,1,1,reachability,100,0,30,1.763,1,1,0,0,1.0,0,520,120,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""praha"":[""100.0.0.0/24""]}}}"
+,,1,1,reachability,100,0,31,2.354,1,1,0,0,1.0,0,514,135,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""kiev"":[""100.0.24.0/24""]}}}"
+,,1,1,reachability,100,0,32,1.946,1,1,0,0,1.0,0,520,135,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""geneva"": [""100.0.18.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,33,1.841,1,1,0,0,1.0,0,518,120,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""warsaw"":[""100.0.20.0/24""]}}}"
+,,1,1,reachability,100,0,34,2.047,1,1,0,0,1.0,0,514,114,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""paris"":[""100.0.32.0/24""]}}}"
+,,1,1,reachability,100,0,35,2.151,1,1,0,0,1.0,0,518,128,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""london"": [""100.0.25.0/24""]}}}"
+,,1,1,reachability,100,0,36,2.251,1,1,0,0,1.0,0,520,155,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""brussels"":[""100.0.18.0/24""]}}}"
+,,1,1,reachability,100,0,37,2.44,1,1,0,0,1.0,0,518,110,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""vienna"":[""100.0.13.0/24""]}}}"
+,,1,1,reachability,100,0,38,1.882,1,1,0,0,1.0,0,514,90,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""amsterdam"": [""100.0.5.0/24""]}}}"
+,,1,1,reachability,100,0,39,1.956,1,1,0,0,1.0,0,518,127,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""milan"": [""100.0.20.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,40,2.115,1,1,0,0,1.0,0,518,115,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""brussels"": [""100.0.29.0/24""]}}}"
+,,1,1,reachability,100,0,41,1.843,1,1,0,0,1.0,0,514,119,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""london"": [""100.0.15.0/24""]}}}"
+,,1,1,reachability,100,0,42,2.559,1,1,0,0,1.0,0,515,160,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""marseille"":[""100.0.29.0/24""]}}}"
+,,1,1,reachability,100,0,43,2.251,1,1,0,0,1.0,0,518,141,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""milan"":[""100.0.15.0/24""]}}}"
+,,1,1,reachability,100,0,44,2.03,1,1,0,0,1.0,0,514,116,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""roma"": [""100.0.8.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,45,2.243,1,1,0,0,1.0,0,520,119,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.5.0/24""]}}}"
+,,1,1,reachability,100,0,46,2.586,1,1,0,0,1.0,0,518,164,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""amsterdam"": [""100.0.13.0/24""]}}}"
+,,1,1,reachability,100,0,47,1.944,1,1,0,0,1.0,0,518,121,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""roma"": [""100.0.3.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,48,2.355,1,1,0,0,1.0,0,515,135,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""bucharest"": [""100.0.32.0/24""]}}}"
+,,1,1,reachability,100,0,49,1.74,1,1,0,0,1.0,0,518,114,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""barcelona"": [""100.0.25.0/24""]}}}"
+,,1,1,reachability,100,0,50,1.945,1,1,0,0,1.0,0,518,116,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.18.0/24""]}}}"
+,,1,1,reachability,100,0,51,2.662,1,1,0,0,1.0,0,514,163,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""lyon"": [""100.0.11.0/24""]}}}"
+,,1,1,reachability,100,0,52,2.331,1,1,0,0,1.0,0,514,107,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""milan"": [""100.0.25.0/24""]}}}"
+,,1,1,reachability,100,0,53,2.14,1,1,0,0,1.0,0,518,121,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""london"":[""100.0.14.0/24""]}}}"
+,,1,1,reachability,100,0,54,2.39,1,1,0,0,1.0,0,520,129,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""london"": [""100.0.6.0/24""]}}}"
+,,1,1,reachability,100,0,55,2.279,1,1,0,0,1.0,0,514,104,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""vienna"": [""100.0.31.0/24""]}}}"
+,,1,1,reachability,100,0,56,2.015,1,1,0,0,1.0,0,519,121,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""bucharest"":[""100.0.11.0/24""]}}}"
+,,1,1,reachability,100,0,57,2.297,1,1,0,0,1.0,0,514,125,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""sofia"": [""100.0.29.0/24""]
+    }
+  }
+}"
+,,1,1,reachability,100,0,58,2.109,1,1,0,0,1.0,0,521,118,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""istanbul"": [""100.0.18.0/24""]}}}"
+,,1,1,reachability,100,0,59,2.217,1,1,0,0,1.0,0,520,96,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""madrid"": [""100.0.13.0/24""]}}}"
+,,1,1,reachability,100,0,60,1.964,1,1,0,0,1.0,0,519,115,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""bucharest"":[""100.0.2.0/24""]}}}"
+,,1,1,reachability,100,0,61,2.266,1,1,0,0,1.0,0,520,111,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""roma"": [""100.0.15.0/24""]}}}"
+,,1,1,reachability,100,0,62,2.356,1,1,0,0,1.0,0,518,153,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""rotterdam"":[""100.0.13.0/24""]}}}"
+,,1,1,reachability,100,0,63,2.661,1,1,0,0,1.0,0,518,163,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""zurich"": [""100.0.21.0/24""]}}}"
+,,1,1,reachability,100,0,64,2.159,1,1,0,0,1.0,0,518,115,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""OK"",""result"":{""reachability"":{""zurich"":[""100.0.23.0/24""]}}}"
+,,1,1,reachability,100,0,65,1.821,1,1,0,0,1.0,0,514,91,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""roma"": [""100.0.4.0/24""]}}}"
+,,1,1,reachability,100,0,66,2.022,1,1,0,0,1.0,0,519,104,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""marseille"":[""100.0.22.0/24""]}}}"
+,,1,1,reachability,100,0,67,3.927,1,1,0,0,1.0,0,520,219,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""athens"": [""100.0.31.0/24""]
+    }
+  }
+}"
+,,1,1,reachability,100,0,68,1.677,1,1,0,0,1.0,0,516,116,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""bratislava"": [""100.0.8.0/24""]}}}"
+,,1,1,reachability,100,0,69,1.802,1,1,0,0,1.0,0,514,98,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.4.0/24""]}}}"
+,,1,1,reachability,100,0,70,2.019,1,1,0,0,1.0,0,518,120,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.20.0/24""]}}}"
+,,1,1,reachability,100,0,71,2.075,1,1,0,0,1.0,0,514,114,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""sofia"": [""100.0.25.0/24""]}}}"
+,,1,1,reachability,100,0,72,1.765,1,1,0,0,1.0,0,514,102,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""rotterdam"": [""100.0.8.0/24""]}}}"
+,,1,1,reachability,100,0,73,1.919,1,1,0,0,1.0,0,518,157,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""basel"": [""100.0.14.0/24""]
+    }
+  }
+}"
+,,1,1,reachability,100,0,74,2.561,1,1,0,0,1.0,0,514,131,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""frankfurt"": [""100.0.18.0/24""]
+    }
+  }
+}"
+,,1,1,reachability,100,0,75,2.777,1,1,0,0,1.0,0,518,136,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""kiev"": [""100.0.20.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,76,2.645,1,1,0,0,1.0,0,514,109,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""geneva"":[""100.0.8.0/24""]}}}"
+,,1,1,reachability,100,0,77,2.05,1,1,0,0,1.0,0,518,122,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""amsterdam"": [""100.0.15.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,78,1.843,1,1,0,0,1.0,0,518,117,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""basel"": [""100.0.10.0/24""]}}}"
+,,1,1,reachability,100,0,79,2.457,1,1,0,0,1.0,0,514,97,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""kiev"":[""100.0.8.0/24""]}}}"
+,,1,1,reachability,100,0,80,3.6,1,1,0,0,1.0,0,520,248,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""brussels"": [""100.0.6.0/24""]}}}"
+,,1,1,reachability,100,0,81,2.442,1,1,0,0,1.0,0,514,110,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""kiev"": [""100.0.6.0/24""]
+    }
+  }
+}"
+,,1,1,reachability,100,0,82,2.358,1,1,0,0,1.0,0,515,99,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""zurich"":[""100.0.8.0/24""]}}}"
+,,1,1,reachability,100,0,83,2.049,1,1,0,0,1.0,0,514,113,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""madrid"":[""100.0.10.0/24""]}}}"
+,,1,1,reachability,100,0,84,2.61,1,1,0,0,1.0,0,521,128,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""luxembourg"":[""100.0.18.0/24""]}}}"
+,,1,1,reachability,100,0,85,2.145,1,1,0,0,1.0,0,518,121,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""lyon"": [""100.0.21.0/24""]}}}"
+,,1,1,reachability,100,0,86,2.589,1,1,0,0,1.0,0,515,134,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""bucharest"":[""100.0.21.0/24""]}}}"
+,,1,1,reachability,100,0,87,2.167,1,1,0,0,1.0,0,518,107,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""budapest"":[""100.0.20.0/24""]}}}"
+,,1,1,reachability,100,0,88,1.74,1,1,0,0,1.0,0,518,120,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""amsterdam"": [""100.0.22.0/24""]}}}"
+,,1,1,reachability,100,0,89,1.944,1,1,0,0,1.0,0,514,117,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""geneva"":[""100.0.4.0/24""]}}}"
+,,1,1,reachability,100,0,90,2.047,1,1,0,0,1.0,0,514,124,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""brussels"": [""100.0.10.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,91,2.231,1,1,0,0,1.0,0,518,100,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""vienna"": [""100.0.23.0/24""]}}}"
+,,1,1,reachability,100,0,92,2.835,1,1,0,0,1.0,0,520,142,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""bratislava"": [""100.0.24.0/24""]}}}"
+,,1,1,reachability,100,0,93,2.6,1,1,0,0,1.0,0,519,118,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""bucharest"":[""100.0.14.0/24""]}}}"
+,,1,1,reachability,100,0,94,2.441,1,1,0,0,1.0,0,519,124,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""marseille"": [""100.0.31.0/24""]}}}"
+,,1,1,reachability,100,0,95,2.076,1,1,0,0,1.0,0,518,117,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""lyon"":[""100.0.20.0/24""]}}}"
+,,1,1,reachability,100,0,96,2.663,1,1,0,0,1.0,0,519,140,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""strasbourg"": [""100.0.20.0/24""]
+        }
+    }
+}"
+,,1,1,reachability,100,0,97,2.25,1,1,0,0,1.0,0,515,87,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""zurich"": [""100.0.14.0/24""]}}}"
+,,1,1,reachability,100,0,98,2.457,1,1,0,0,1.0,0,514,127,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""athens"": [""100.0.26.0/24""]
+    }
+  }
+}"
+,,1,1,reachability,100,0,99,2.42,1,1,0,0,1.0,0,514,150,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""basel"": [""100.0.26.0/24""]}}}"
+,,2,1,reachability,100,0,0,3.394,2,2,0,0,1.0,0,533,217,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""istanbul"": [""100.0.4.0/24""], ""milan"": [""100.0.1.0/24""]}}}"
+,,2,1,reachability,100,0,1,2.786,2,2,0,0,1.0,0,534,190,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""sofia"": [""100.0.18.0/24""], ""paris"": [""100.0.24.0/24""]}}}"
+,,2,1,reachability,100,0,2,2.968,2,2,0,0,1.0,0,534,200,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""marseille"": [""100.0.0.0/24""],
+            ""kiev"": [""100.0.22.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,3,1.93,2,2,0,0,1.0,0,533,146,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""milan"":[""100.0.10.0/24""],""london"":[""100.0.1.0/24""]}}}"
+,,2,1,reachability,100,0,4,2.241,2,2,0,0,1.0,0,537,150,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""marseille"": [""100.0.1.0/24""],
+            ""athens"": [""100.0.25.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,5,2.823,2,2,0,0,1.0,0,530,197,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.18.0/24""],
+      ""warsaw"": [""100.0.9.0/24""]
+    }
+  }
+}"
+,,2,1,reachability,100,0,6,3.138,2,2,0,0,1.0,0,536,200,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""frankfurt"":[""100.0.13.0/24""],""lyon"":[""100.0.13.0/24""]}}}"
+,,2,1,reachability,100,0,7,2.968,2,2,0,0,1.0,0,534,171,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""athens"":[""100.0.14.0/24""],""frankfurt"":[""100.0.31.0/24""]}}}"
+,,2,1,reachability,100,0,8,2.142,2,2,0,0,1.0,0,537,193,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""istanbul"":[""100.0.8.0/24""],""luxembourg"":[""100.0.14.0/24""]}}}"
+,,2,1,reachability,100,0,9,2.363,2,2,0,0,1.0,0,538,191,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""sofia"": [""100.0.4.0/24""],
+            ""frankfurt"": [""100.0.1.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,10,2.764,2,2,0,0,1.0,0,537,230,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""paris"": [""100.0.9.0/24""], ""bucharest"": [""100.0.31.0/24""]}}}"
+,,2,1,reachability,100,0,11,3.788,2,2,0,0,1.0,0,536,300,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""amsterdam"": [""100.0.27.0/24""], ""brussels"": [""100.0.31.0/24""]}}}"
+,,2,1,reachability,100,0,12,2.489,2,2,0,0,1.0,0,538,152,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""rotterdam"": [""100.0.24.0/24""],
+      ""praha"": [""100.0.22.0/24""]
+    }
+  }
+}"
+,,2,1,reachability,100,0,13,1.911,2,2,0,0,1.0,0,536,98,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""roma"": [""100.0.32.0/24""],
+            ""sofia"": [""100.0.10.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,14,2.253,2,2,0,0,1.0,0,532,163,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""lyon"": [""100.0.8.0/24""],
+            ""zurich"": [""100.0.9.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,15,2.479,2,2,0,0,1.0,0,533,161,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""praha"": [""100.0.0.0/24""],
+            ""kiev"": [""100.0.24.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,16,2.612,2,2,0,0,1.0,0,533,209,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""geneva"": [""100.0.18.0/24""], ""warsaw"": [""100.0.20.0/24""]}}}"
+,,2,1,reachability,100,0,17,2.36,2,2,0,0,1.0,0,537,206,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""paris"": [""100.0.32.0/24""],
+            ""london"": [""100.0.25.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,18,2.558,2,2,0,0,1.0,0,532,151,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""brussels"": [""100.0.18.0/24""],
+            ""vienna"": [""100.0.13.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,19,2.027,2,2,0,0,1.0,0,534,142,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""amsterdam"":[""100.0.5.0/24""],""milan"":[""100.0.20.0/24""]}}}"
+,,2,1,reachability,100,0,20,2.096,2,2,0,0,1.0,0,530,157,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""brussels"": [""100.0.29.0/24""],
+            ""london"": [""100.0.15.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,21,3.165,2,2,0,0,1.0,0,539,252,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""marseille"":[""100.0.29.0/24""],""milan"":[""100.0.15.0/24""]}}}"
+,,2,1,reachability,100,0,22,2.7,2,2,0,0,1.0,0,533,174,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""roma"": [""100.0.8.0/24""],
+      ""praha"": [""100.0.5.0/24""]
+    }
+  }
+}"
+,,2,1,reachability,100,0,23,2.414,2,2,0,0,1.0,0,530,135,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""amsterdam"": [""100.0.13.0/24""], ""roma"": [""100.0.3.0/24""]}}}"
+,,2,1,reachability,100,0,24,2.24,2,2,0,0,1.0,0,534,171,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""bucharest"": [""100.0.32.0/24""], ""barcelona"": [""100.0.25.0/24""]}}}"
+,,2,1,reachability,100,0,25,2.165,2,2,0,0,1.0,0,537,123,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.18.0/24""], ""lyon"": [""100.0.11.0/24""]}}}"
+,,2,1,reachability,100,0,26,4.503,2,2,0,0,1.0,0,534,428,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""milan"":[""100.0.25.0/24""],""london"":[""100.0.14.0/24""]}}}"
+,,2,1,reachability,100,0,27,3.129,2,2,0,0,1.0,0,540,169,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""london"":[""100.0.6.0/24""],""vienna"":[""100.0.31.0/24""]}}}"
+,,2,1,reachability,100,0,28,2.909,2,2,0,0,1.0,0,537,158,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""bucharest"": [""100.0.11.0/24""],
+            ""sofia"": [""100.0.29.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,29,2.686,2,2,0,0,1.0,0,535,189,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""istanbul"": [""100.0.18.0/24""],
+            ""madrid"": [""100.0.13.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,30,2.079,2,2,0,0,1.0,0,537,181,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""bucharest"": [""100.0.2.0/24""],
+            ""roma"": [""100.0.15.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,31,2.794,2,2,0,0,1.0,0,536,230,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""rotterdam"":[""100.0.13.0/24""],""zurich"":[""100.0.21.0/24""]}}}"
+,,2,1,reachability,100,0,32,2.99,2,2,0,0,1.0,0,539,197,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""zurich"":[""100.0.23.0/24""],""roma"":[""100.0.4.0/24""]}}}"
+,,2,1,reachability,100,0,33,2.553,2,2,0,0,1.0,0,537,224,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""marseille"":[""100.0.22.0/24""],""athens"":[""100.0.31.0/24""]}}}"
+,,2,1,reachability,100,0,34,2.524,2,2,0,0,1.0,0,534,184,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""bratislava"":[""100.0.8.0/24""],""praha"":[""100.0.4.0/24""]}}}"
+,,2,1,reachability,100,0,35,2.479,2,2,0,0,1.0,0,536,159,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""praha"": [""100.0.20.0/24""],
+            ""sofia"": [""100.0.25.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,36,2.266,2,2,0,0,1.0,0,533,206,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""rotterdam"": [""100.0.8.0/24""],
+      ""basel"": [""100.0.14.0/24""]
+    }
+  }
+}"
+,,2,1,reachability,100,0,37,2.763,2,2,0,0,1.0,0,530,216,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""frankfurt"": [""100.0.18.0/24""], ""kiev"": [""100.0.20.0/24""]}}}"
+,,2,1,reachability,100,0,38,2.464,2,2,0,0,1.0,0,532,195,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""geneva"": [""100.0.8.0/24""],
+            ""amsterdam"": [""100.0.15.0/24""]
+        }
+    }
+}"
+,,2,1,reachability,100,0,39,2.039,2,2,0,0,1.0,0,536,134,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""basel"":[""100.0.10.0/24""],""kiev"":[""100.0.8.0/24""]}}}"
+,,2,1,reachability,100,0,40,2.561,2,2,0,0,1.0,0,534,152,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""brussels"":[""100.0.6.0/24""],""kiev"":[""100.0.6.0/24""]}}}"
+,,2,1,reachability,100,0,41,2.644,2,2,0,0,1.0,0,530,139,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""OK"", ""result"": {""reachability"": {""zurich"": [""100.0.8.0/24""], ""madrid"": [""100.0.10.0/24""]}}}"
+,,2,1,reachability,100,0,42,3.087,2,2,0,0,1.0,0,534,266,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""luxembourg"": [""100.0.18.0/24""], ""lyon"": [""100.0.21.0/24""]}}}"
+,,2,1,reachability,100,0,43,2.254,2,2,0,0,1.0,0,533,191,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.21.0/24""],
+      ""budapest"": [""100.0.20.0/24""]
+    }
+  }
+}"
+,,2,1,reachability,100,0,44,2.249,2,2,0,0,1.0,0,530,144,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""amsterdam"":[""100.0.22.0/24""],""geneva"":[""100.0.4.0/24""]}}}"
+,,2,1,reachability,100,0,45,2.258,2,2,0,0,1.0,0,532,150,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""brussels"":[""100.0.10.0/24""],""vienna"":[""100.0.23.0/24""]}}}"
+,,2,1,reachability,100,0,46,2.058,2,2,0,0,1.0,0,537,102,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""bratislava"":[""100.0.24.0/24""],""bucharest"":[""100.0.14.0/24""]}}}"
+,,2,1,reachability,100,0,47,2.235,2,2,0,0,1.0,0,530,142,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""marseille"":[""100.0.31.0/24""],""lyon"":[""100.0.20.0/24""]}}}"
+,,2,1,reachability,100,0,48,2.662,2,2,0,0,1.0,0,537,194,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""strasbourg"": [""100.0.20.0/24""], ""zurich"": [""100.0.14.0/24""]}}}"
+,,2,1,reachability,100,0,49,2.485,2,2,0,0,1.0,0,529,224,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""athens"": [""100.0.26.0/24""], ""basel"": [""100.0.26.0/24""]}}}"
+,,5,1,reachability,100,0,0,2.983,5,5,0,0,1.0,0,586,305,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""istanbul"":[""100.0.4.0/24""],""milan"":[""100.0.1.0/24""],""sofia"":[""100.0.18.0/24""],""paris"":[""100.0.24.0/24""],""marseille"":[""100.0.0.0/24""]}}}"
+,,5,1,reachability,100,0,1,4.076,5,5,0,0,1.0,0,585,415,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""kiev"": [""100.0.22.0/24""],
+            ""milan"": [""100.0.10.0/24""],
+            ""london"": [""100.0.1.0/24""],
+            ""marseille"": [""100.0.1.0/24""],
+            ""athens"": [""100.0.25.0/24""]
+        }
+    }
+}"
+,,5,1,reachability,100,0,2,3.285,5,5,0,0,1.0,0,592,245,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""paris"": [""100.0.18.0/24""], ""warsaw"": [""100.0.9.0/24""], ""frankfurt"": [""100.0.13.0/24""], ""lyon"": [""100.0.13.0/24""], ""athens"": [""100.0.14.0/24""]}}}"
+,,5,1,reachability,100,0,3,3.533,5,5,0,0,1.0,0,592,339,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""frankfurt"": [""100.0.31.0/24"", ""100.0.1.0/24""],
+      ""istanbul"": [""100.0.8.0/24""],
+      ""luxembourg"": [""100.0.14.0/24""],
+      ""sofia"": [""100.0.4.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,4,2.6,5,5,0,0,1.0,0,584,283,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""paris"": [""100.0.9.0/24""],
+      ""bucharest"": [""100.0.31.0/24""],
+      ""amsterdam"": [""100.0.27.0/24""],
+      ""brussels"": [""100.0.31.0/24""],
+      ""rotterdam"": [""100.0.24.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,5,2.383,5,5,0,0,1.0,0,575,203,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""praha"": [""100.0.22.0/24""],
+            ""roma"": [""100.0.32.0/24""],
+            ""sofia"": [""100.0.10.0/24""],
+            ""lyon"": [""100.0.8.0/24""],
+            ""zurich"": [""100.0.9.0/24""]
+        }
+    }
+}"
+,,5,1,reachability,100,0,6,3.041,5,5,0,0,1.0,0,590,315,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.0.0/24""], ""kiev"": [""100.0.24.0/24""], ""geneva"": [""100.0.18.0/24""], ""warsaw"": [""100.0.20.0/24""], ""paris"": [""100.0.32.0/24""]}}}"
+,,5,1,reachability,100,0,7,3.367,5,5,0,0,1.0,0,588,414,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""london"": [""100.0.25.0/24""],
+      ""brussels"": [""100.0.18.0/24""],
+      ""vienna"": [""100.0.13.0/24""],
+      ""amsterdam"": [""100.0.5.0/24""],
+      ""milan"": [""100.0.20.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,8,3.563,5,5,0,0,1.0,0,592,436,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""brussels"": [""100.0.29.0/24""],
+      ""london"": [""100.0.15.0/24""],
+      ""marseille"": [""100.0.29.0/24""],
+      ""milan"": [""100.0.15.0/24""],
+      ""roma"": [""100.0.8.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,9,3.086,5,5,0,0,1.0,0,598,247,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""praha"": [""100.0.5.0/24""],
+            ""amsterdam"": [""100.0.13.0/24""],
+            ""roma"": [""100.0.3.0/24""],
+            ""bucharest"": [""100.0.32.0/24""],
+            ""barcelona"": [""100.0.25.0/24""]
+        }
+    }
+}"
+,,5,1,reachability,100,0,10,3.11,5,5,0,0,1.0,0,591,307,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""praha"": [""100.0.18.0/24""], ""lyon"": [""100.0.11.0/24""], ""milan"": [""100.0.25.0/24""], ""london"": [""100.0.14.0/24"", ""100.0.6.0/24""]}}}"
+,,5,1,reachability,100,0,11,3.494,5,5,0,0,1.0,0,585,312,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""vienna"":[""100.0.31.0/24""],""bucharest"":[""100.0.11.0/24""],""sofia"":[""100.0.29.0/24""],""istanbul"":[""100.0.18.0/24""],""madrid"":[""100.0.13.0/24""]}}}"
+,,5,1,reachability,100,0,12,3.629,5,5,0,0,1.0,0,588,339,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.2.0/24""],
+      ""roma"": [""100.0.15.0/24""],
+      ""rotterdam"": [""100.0.13.0/24""],
+      ""zurich"": [""100.0.21.0/24"", ""100.0.23.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,13,3.269,5,5,0,0,1.0,0,590,331,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""roma"": [""100.0.4.0/24""],
+      ""marseille"": [""100.0.22.0/24""],
+      ""athens"": [""100.0.31.0/24""],
+      ""bratislava"": [""100.0.8.0/24""],
+      ""praha"": [""100.0.4.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,14,4.114,5,5,0,0,1.0,0,589,397,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""praha"":[""100.0.20.0/24""],""sofia"":[""100.0.25.0/24""],""rotterdam"":[""100.0.8.0/24""],""basel"":[""100.0.14.0/24""],""frankfurt"":[""100.0.18.0/24""]}}}"
+,,5,1,reachability,100,0,15,2.73,5,5,0,0,1.0,0,584,288,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""kiev"": [""100.0.20.0/24"", ""100.0.8.0/24""],
+      ""geneva"": [""100.0.8.0/24""],
+      ""amsterdam"": [""100.0.15.0/24""],
+      ""basel"": [""100.0.10.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,16,3.34,5,5,0,0,1.0,0,586,350,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""brussels"": [""100.0.6.0/24""],
+      ""kiev"": [""100.0.6.0/24""],
+      ""zurich"": [""100.0.8.0/24""],
+      ""madrid"": [""100.0.10.0/24""],
+      ""luxembourg"": [""100.0.18.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,17,3.441,5,5,0,0,1.0,0,588,341,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""lyon"": [""100.0.21.0/24""],
+      ""bucharest"": [""100.0.21.0/24""],
+      ""budapest"": [""100.0.20.0/24""],
+      ""amsterdam"": [""100.0.22.0/24""],
+      ""geneva"": [""100.0.4.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,18,3.475,5,5,0,0,1.0,0,591,329,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""brussels"": [""100.0.10.0/24""],
+      ""vienna"": [""100.0.23.0/24""],
+      ""bratislava"": [""100.0.24.0/24""],
+      ""bucharest"": [""100.0.14.0/24""],
+      ""marseille"": [""100.0.31.0/24""]
+    }
+  }
+}"
+,,5,1,reachability,100,0,19,3.804,5,5,0,0,1.0,0,596,452,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""lyon"":[""100.0.20.0/24""],""strasbourg"":[""100.0.20.0/24""],""zurich"":[""100.0.14.0/24""],""athens"":[""100.0.26.0/24""],""basel"":[""100.0.26.0/24""]}}}"
+,,10,1,reachability,100,0,0,5.613,10,10,0,0,1.0,0,666,720,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""istanbul"": [""100.0.4.0/24""],
+      ""milan"": [""100.0.1.0/24"", ""100.0.10.0/24""],
+      ""sofia"": [""100.0.18.0/24""],
+      ""paris"": [""100.0.24.0/24""],
+      ""marseille"": [""100.0.0.0/24"", ""100.0.1.0/24""],
+      ""kiev"": [""100.0.22.0/24""],
+      ""london"": [""100.0.1.0/24""],
+      ""athens"": [""100.0.25.0/24""]
+    }
+  }
+}"
+,,10,1,reachability,100,0,1,4.99,10,10,0,0,1.0,0,679,632,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""paris"":[""100.0.18.0/24""],""warsaw"":[""100.0.9.0/24""],""frankfurt"":[""100.0.13.0/24"",""100.0.31.0/24"",""100.0.1.0/24""],""lyon"":[""100.0.13.0/24""],""athens"":[""100.0.14.0/24""],""istanbul"":[""100.0.8.0/24""],""luxembourg"":[""100.0.14.0/24""],""sofia"":[""100.0.4.0/24""]}}}"
+,,10,1,reachability,100,0,2,6.997,10,10,0,0,1.0,0,677,998,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""paris"": [""100.0.9.0/24""],
+            ""bucharest"": [""100.0.31.0/24""],
+            ""amsterdam"": [""100.0.27.0/24""],
+            ""brussels"": [""100.0.31.0/24""],
+            ""rotterdam"": [""100.0.24.0/24""],
+            ""praha"": [""100.0.22.0/24""],
+            ""roma"": [""100.0.32.0/24""],
+            ""sofia"": [""100.0.10.0/24""],
+            ""lyon"": [""100.0.8.0/24""],
+            ""zurich"": [""100.0.9.0/24""]
+        }
+    }
+}"
+,,10,1,reachability,100,0,3,4.399,10,10,0,0,1.0,0,675,407,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""praha"":[""100.0.0.0/24""],""kiev"":[""100.0.24.0/24""],""geneva"":[""100.0.18.0/24""],""warsaw"":[""100.0.20.0/24""],""paris"":[""100.0.32.0/24""],""london"":[""100.0.25.0/24""],""brussels"":[""100.0.18.0/24""],""vienna"":[""100.0.13.0/24""],""amsterdam"":[""100.0.5.0/24""],""milan"":[""100.0.20.0/24""]}}}"
+,,10,1,reachability,100,0,4,5.357,10,10,0,0,1.0,0,682,648,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""brussels"": [""100.0.29.0/24""],
+      ""london"": [""100.0.15.0/24""],
+      ""marseille"": [""100.0.29.0/24""],
+      ""milan"": [""100.0.15.0/24""],
+      ""roma"": [""100.0.8.0/24"", ""100.0.3.0/24""],
+      ""praha"": [""100.0.5.0/24""],
+      ""amsterdam"": [""100.0.13.0/24""],
+      ""bucharest"": [""100.0.32.0/24""],
+      ""barcelona"": [""100.0.25.0/24""]
+    }
+  }
+}"
+,,10,1,reachability,100,0,5,4.672,10,10,0,0,1.0,0,686,557,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""praha"": [""100.0.18.0/24""],
+            ""lyon"": [""100.0.11.0/24""],
+            ""milan"": [""100.0.25.0/24""],
+            ""london"": [""100.0.14.0/24"", ""100.0.6.0/24""],
+            ""vienna"": [""100.0.31.0/24""],
+            ""bucharest"": [""100.0.11.0/24""],
+            ""sofia"": [""100.0.29.0/24""],
+            ""istanbul"": [""100.0.18.0/24""],
+            ""madrid"": [""100.0.13.0/24""]
+        }
+    }
+}"
+,,10,1,reachability,100,0,6,6.555,10,10,0,0,1.0,0,687,780,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.2.0/24""],
+      ""roma"": [""100.0.15.0/24"", ""100.0.4.0/24""],
+      ""rotterdam"": [""100.0.13.0/24""],
+      ""zurich"": [""100.0.21.0/24"", ""100.0.23.0/24""],
+      ""marseille"": [""100.0.22.0/24""],
+      ""athens"": [""100.0.31.0/24""],
+      ""bratislava"": [""100.0.8.0/24""],
+      ""praha"": [""100.0.4.0/24""]
+    }
+  }
+}"
+,,10,1,reachability,100,0,7,5.114,10,10,0,0,1.0,0,675,751,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""praha"": [""100.0.20.0/24""],
+      ""sofia"": [""100.0.25.0/24""],
+      ""rotterdam"": [""100.0.8.0/24""],
+      ""basel"": [""100.0.14.0/24"", ""100.0.10.0/24""],
+      ""frankfurt"": [""100.0.18.0/24""],
+      ""kiev"": [""100.0.20.0/24"", ""100.0.8.0/24""],
+      ""geneva"": [""100.0.8.0/24""],
+      ""amsterdam"": [""100.0.15.0/24""]
+    }
+  }
+}"
+,,10,1,reachability,100,0,8,4.809,10,10,0,0,1.0,0,672,435,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""brussels"":[""100.0.6.0/24""],""kiev"":[""100.0.6.0/24""],""zurich"":[""100.0.8.0/24""],""madrid"":[""100.0.10.0/24""],""luxembourg"":[""100.0.18.0/24""],""lyon"":[""100.0.21.0/24""],""bucharest"":[""100.0.21.0/24""],""budapest"":[""100.0.20.0/24""],""amsterdam"":[""100.0.22.0/24""],""geneva"":[""100.0.4.0/24""]}}}"
+,,10,1,reachability,100,0,9,5.117,10,10,0,0,1.0,0,671,624,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"":""ok"",""result"":{""reachability"":{""brussels"":[""100.0.10.0/24""],""vienna"":[""100.0.23.0/24""],""bratislava"":[""100.0.24.0/24""],""bucharest"":[""100.0.14.0/24""],""marseille"":[""100.0.31.0/24""],""lyon"":[""100.0.20.0/24""],""strasbourg"":[""100.0.20.0/24""],""zurich"":[""100.0.14.0/24""],""athens"":[""100.0.26.0/24""],""basel"":[""100.0.26.0/24""]}}}"
+,,20,1,reachability,100,0,0,6.999,20,20,0,0,1.0,0,864,933,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""athens"": [""100.0.25.0/24"", ""100.0.14.0/24""],
+      ""frankfurt"": [""100.0.13.0/24"", ""100.0.31.0/24"", ""100.0.1.0/24""],
+      ""istanbul"": [""100.0.4.0/24"", ""100.0.8.0/24""],
+      ""kiev"": [""100.0.22.0/24""],
+      ""london"": [""100.0.1.0/24""],
+      ""luxembourg"": [""100.0.14.0/24""],
+      ""lyon"": [""100.0.13.0/24""],
+      ""marseille"": [""100.0.0.0/24"", ""100.0.1.0/24""],
+      ""milan"": [""100.0.1.0/24"", ""100.0.10.0/24""],
+      ""paris"": [""100.0.24.0/24"", ""100.0.18.0/24""],
+      ""sofia"": [""100.0.18.0/24"", ""100.0.4.0/24""],
+      ""warsaw"": [""100.0.9.0/24""]
+    }
+  }
+}"
+,,20,1,reachability,100,0,1,10.719,20,20,0,0,1.0,0,852,1627,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""paris"": [""100.0.9.0/24"", ""100.0.32.0/24""], ""bucharest"": [""100.0.31.0/24""], ""amsterdam"": [""100.0.27.0/24"", ""100.0.5.0/24""], ""brussels"": [""100.0.31.0/24"", ""100.0.18.0/24""], ""rotterdam"": [""100.0.24.0/24""], ""praha"": [""100.0.22.0/24"", ""100.0.0.0/24""], ""roma"": [""100.0.32.0/24""], ""sofia"": [""100.0.10.0/24""], ""lyon"": [""100.0.8.0/24""], ""zurich"": [""100.0.9.0/24""], ""kiev"": [""100.0.24.0/24""], ""geneva"": [""100.0.18.0/24""], ""warsaw"": [""100.0.20.0/24""], ""london"": [""100.0.25.0/24""], ""vienna"": [""100.0.13.0/24""], ""milan"": [""100.0.20.0/24""]}}}"
+,,20,1,reachability,100,0,2,7.869,20,20,0,0,1.0,0,855,1238,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{""status"": ""ok"", ""result"": {""reachability"": {""brussels"": [""100.0.29.0/24""], ""london"": [""100.0.15.0/24"", ""100.0.14.0/24"", ""100.0.6.0/24""], ""marseille"": [""100.0.29.0/24""], ""milan"": [""100.0.15.0/24"", ""100.0.25.0/24""], ""roma"": [""100.0.8.0/24"", ""100.0.3.0/24""], ""praha"": [""100.0.5.0/24"", ""100.0.18.0/24""], ""amsterdam"": [""100.0.13.0/24""], ""bucharest"": [""100.0.32.0/24"", ""100.0.11.0/24""], ""barcelona"": [""100.0.25.0/24""], ""lyon"": [""100.0.11.0/24""], ""vienna"": [""100.0.31.0/24""], ""sofia"": [""100.0.29.0/24""], ""istanbul"": [""100.0.18.0/24""], ""madrid"": [""100.0.13.0/24""]}}}"
+,,20,1,reachability,100,0,3,10.162,20,20,0,0,1.0,0,868,1038,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""bucharest"": [""100.0.2.0/24""],
+      ""roma"": [""100.0.15.0/24"", ""100.0.4.0/24""],
+      ""rotterdam"": [""100.0.13.0/24"", ""100.0.8.0/24""],
+      ""zurich"": [""100.0.21.0/24"", ""100.0.23.0/24""],
+      ""marseille"": [""100.0.22.0/24""],
+      ""athens"": [""100.0.31.0/24""],
+      ""bratislava"": [""100.0.8.0/24""],
+      ""praha"": [""100.0.4.0/24"", ""100.0.20.0/24""],
+      ""sofia"": [""100.0.25.0/24""],
+      ""basel"": [""100.0.14.0/24"", ""100.0.10.0/24""],
+      ""frankfurt"": [""100.0.18.0/24""],
+      ""kiev"": [""100.0.20.0/24"", ""100.0.8.0/24""],
+      ""geneva"": [""100.0.8.0/24""],
+      ""amsterdam"": [""100.0.15.0/24""]
+    }
+  }
+}"
+,,20,1,reachability,100,0,4,7.202,20,20,0,0,1.0,0,858,1013,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""brussels"": [""100.0.6.0/24"", ""100.0.10.0/24""],
+      ""kiev"": [""100.0.6.0/24""],
+      ""zurich"": [""100.0.8.0/24"", ""100.0.14.0/24""],
+      ""madrid"": [""100.0.10.0/24""],
+      ""luxembourg"": [""100.0.18.0/24""],
+      ""lyon"": [""100.0.21.0/24"", ""100.0.20.0/24""],
+      ""bucharest"": [""100.0.21.0/24"", ""100.0.14.0/24""],
+      ""budapest"": [""100.0.20.0/24""],
+      ""amsterdam"": [""100.0.22.0/24""],
+      ""geneva"": [""100.0.4.0/24""],
+      ""vienna"": [""100.0.23.0/24""],
+      ""bratislava"": [""100.0.24.0/24""],
+      ""marseille"": [""100.0.31.0/24""],
+      ""strasbourg"": [""100.0.20.0/24""],
+      ""athens"": [""100.0.26.0/24""],
+      ""basel"": [""100.0.26.0/24""]
+    }
+  }
+}"
+,,50,1,reachability,100,0,0,21.225,50,50,0,0,1.0,0,1366,3886,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""amsterdam"": [""100.0.27.0/24"", ""100.0.5.0/24"", ""100.0.13.0/24""],
+      ""athens"": [""100.0.25.0/24"", ""100.0.14.0/24""],
+      ""barcelona"": [""100.0.25.0/24""],
+      ""brussels"": [""100.0.31.0/24"", ""100.0.18.0/24"", ""100.0.29.0/24""],
+      ""bucharest"": [""100.0.31.0/24"", ""100.0.32.0/24""],
+      ""frankfurt"": [""100.0.13.0/24"", ""100.0.31.0/24"", ""100.0.1.0/24""],
+      ""geneva"": [""100.0.18.0/24""],
+      ""istanbul"": [""100.0.4.0/24"", ""100.0.8.0/24""],
+      ""kiev"": [""100.0.22.0/24"", ""100.0.24.0/24""],
+      ""london"": [""100.0.1.0/24"", ""100.0.25.0/24"", ""100.0.15.0/24""],
+      ""luxembourg"": [""100.0.14.0/24""],
+      ""lyon"": [""100.0.13.0/24"", ""100.0.8.0/24""],
+      ""marseille"": [""100.0.0.0/24"", ""100.0.1.0/24"", ""100.0.29.0/24""],
+      ""milan"": [""100.0.1.0/24"", ""100.0.10.0/24"", ""100.0.20.0/24"", ""100.0.15.0/24""],
+      ""paris"": [""100.0.24.0/24"", ""100.0.18.0/24"", ""100.0.9.0/24"", ""100.0.32.0/24""],
+      ""praha"": [""100.0.22.0/24"", ""100.0.0.0/24"", ""100.0.5.0/24""],
+      ""roma"": [""100.0.32.0/24"", ""100.0.8.0/24"", ""100.0.3.0/24""],
+      ""rotterdam"": [""100.0.24.0/24""],
+      ""sofia"": [""100.0.18.0/24"", ""100.0.4.0/24"", ""100.0.10.0/24""],
+      ""vienna"": [""100.0.13.0/24""],
+      ""warsaw"": [""100.0.9.0/24"", ""100.0.20.0/24""],
+      ""zurich"": [""100.0.9.0/24""]
+    }
+  }
+}"
+,,50,1,reachability,100,0,1,18.018,50,50,0,0,1.0,0,1394,2909,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+    ""status"": ""ok"",
+    ""result"": {
+        ""reachability"": {
+            ""amsterdam"": [""100.0.15.0/24"", ""100.0.22.0/24""],
+            ""athens"": [""100.0.31.0/24"", ""100.0.26.0/24""],
+            ""basel"": [""100.0.14.0/24"", ""100.0.10.0/24"", ""100.0.26.0/24""],
+            ""bratislava"": [""100.0.8.0/24"", ""100.0.24.0/24""],
+            ""brussels"": [""100.0.6.0/24"", ""100.0.10.0/24""],
+            ""bucharest"": [""100.0.11.0/24"", ""100.0.2.0/24"", ""100.0.21.0/24"", ""100.0.14.0/24""],
+            ""budapest"": [""100.0.20.0/24""],
+            ""frankfurt"": [""100.0.18.0/24""],
+            ""geneva"": [""100.0.8.0/24"", ""100.0.4.0/24""],
+            ""istanbul"": [""100.0.18.0/24""],
+            ""kiev"": [""100.0.20.0/24"", ""100.0.8.0/24"", ""100.0.6.0/24""],
+            ""london"": [""100.0.14.0/24"", ""100.0.6.0/24""],
+            ""luxembourg"": [""100.0.18.0/24""],
+            ""lyon"": [""100.0.11.0/24"", ""100.0.21.0/24"", ""100.0.20.0/24""],
+            ""madrid"": [""100.0.13.0/24"", ""100.0.10.0/24""],
+            ""marseille"": [""100.0.22.0/24"", ""100.0.31.0/24""],
+            ""milan"": [""100.0.25.0/24""],
+            ""praha"": [""100.0.18.0/24"", ""100.0.4.0/24"", ""100.0.20.0/24""],
+            ""roma"": [""100.0.15.0/24"", ""100.0.4.0/24""],
+            ""rotterdam"": [""100.0.13.0/24"", ""100.0.8.0/24""],
+            ""sofia"": [""100.0.29.0/24"", ""100.0.25.0/24""],
+            ""strasbourg"": [""100.0.20.0/24""],
+            ""vienna"": [""100.0.31.0/24"", ""100.0.23.0/24""],
+            ""zurich"": [""100.0.21.0/24"", ""100.0.23.0/24"", ""100.0.8.0/24"", ""100.0.14.0/24""]
+        }
+    }
+}"
+,,100,1,reachability,100,0,0,23.948,100,100,0,0,1.0,0,2298,4033,0,"{'dictionary_item_removed': [""root['waypoint']"", ""root['loadbalancing']""]}","{
+  ""status"": ""ok"",
+  ""result"": {
+    ""reachability"": {
+      ""istanbul"": [""100.0.4.0/24"", ""100.0.8.0/24"", ""100.0.18.0/24""],
+      ""milan"": [""100.0.1.0/24"", ""100.0.10.0/24"", ""100.0.20.0/24"", ""100.0.15.0/24"", ""100.0.25.0/24""],
+      ""sofia"": [""100.0.18.0/24"", ""100.0.4.0/24"", ""100.0.10.0/24"", ""100.0.29.0/24"", ""100.0.25.0/24""],
+      ""paris"": [""100.0.24.0/24"", ""100.0.18.0/24"", ""100.0.9.0/24"", ""100.0.32.0/24""],
+      ""marseille"": [""100.0.0.0/24"", ""100.0.1.0/24"", ""100.0.29.0/24"", ""100.0.22.0/24"", ""100.0.31.0/24""],
+      ""kiev"": [""100.0.22.0/24"", ""100.0.24.0/24"", ""100.0.20.0/24"", ""100.0.8.0/24"", ""100.0.6.0/24""],
+      ""london"": [""100.0.1.0/24"", ""100.0.25.0/24"", ""100.0.15.0/24"", ""100.0.14.0/24"", ""100.0.6.0/24""],
+      ""athens"": [""100.0.25.0/24"", ""100.0.14.0/24"", ""100.0.31.0/24"", ""100.0.26.0/24""],
+      ""warsaw"": [""100.0.9.0/24"", ""100.0.20.0/24""],
+      ""frankfurt"": [""100.0.13.0/24"", ""100.0.31.0/24"", ""100.0.1.0/24"", ""100.0.18.0/24""],
+      ""lyon"": [""100.0.13.0/24"", ""100.0.8.0/24"", ""100.0.11.0/24"", ""100.0.21.0/24"", ""100.0.20.0/24""],
+      ""luxembourg"": [""100.0.14.0/24"", ""100.0.18.0/24""],
+      ""bucharest"": [""100.0.31.0/24"", ""100.0.32.0/24"", ""100.0.11.0/24"", ""100.0.2.0/24"", ""100.0.21.0/24"", ""100.0.14.0/24""],
+      ""amsterdam"": [""100.0.27.0/24"", ""100.0.5.0/24"", ""100.0.13.0/24"", ""100.0.15.0/24"", ""100.0.22.0/24""],
+      ""brussels"": [""100.0.31.0/24"", ""100.0.18.0/24"", ""100.0.29.0/24"", ""100.0.6.0/24"", ""100.0.10.0/24""],
+      ""rotterdam"": [""100.0.24.0/24"", ""100.0.13.0/24"", ""100.0.8.0/24""],
+      ""praha"": [""100.0.22.0/24"", ""100.0.0.0/24"", ""100.0.5.0/24"", ""100.0.18.0/24"", ""100.0.4.0/24"", ""100.0.20.0/24""],
+      ""roma"": [""100.0.32.0/24"", ""100.0.8.0/24"", ""100.0.3.0/24"", ""100.0.15.0/24"", ""100.0.4.0/24""],
+      ""zurich"": [""100.0.9.0/24"", ""100.0.21.0/24"", ""100.0.23.0/24"", ""100.0.8.0/24"", ""100.0.14.0/24""],
+      ""geneva"": [""100.0.18.0/24"", ""100.0.8.0/24"", ""100.0.4.0/24""],
+      ""vienna"": [""100.0.13.0/24"", ""100.0.31.0/24"", ""100.0.23.0/24""],
+      ""barcelona"": [""100.0.25.0/24""],
+      ""madrid"": [""100.0.13.0/24"", ""100.0.10.0/24""],
+      ""bratislava"": [""100.0.8.0/24"", ""100.0.24.0/24""],
+      ""basel"": [""100.0.14.0/24"", ""100.0.10.0/24"", ""100.0.26.0/24""],
+      ""strasbourg"": [""100.0.20.0/24""],
+      ""budapest"": [""100.0.20.0/24""]
+    }
+  }
+}"
